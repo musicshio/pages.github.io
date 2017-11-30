@@ -180,6 +180,7 @@ navbar
 
 h1 {
 	font-family: YakuHanJP, "Hiragino Sans", Meiryo, sans-serif;
+	font-size: 25pt;
 	padding-bottom: .5em;
 	border-bottom: 1px solid #ccc;
 }
@@ -222,3 +223,7 @@ p{
   opacity: 0.6;
   }
 
+.math{
+	overflow-x:auto;
+	overflow-y:hidden;
+}
