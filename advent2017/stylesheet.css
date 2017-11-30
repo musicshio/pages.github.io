@@ -176,6 +176,7 @@ navbar
  
 /* カスタム, iPhone Retinaディスプレイ */ 
 @media only screen and (max-width : 320px) {
+
     
 }
 
@@ -199,7 +200,6 @@ navbar
 .articleMain{
 	line-height: 3;
 	font-family: YakuHanMP, "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
-	font-size: 85%;
 	padding: 50pt 0;
 	text-align: justify;
 }
