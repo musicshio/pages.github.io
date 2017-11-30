@@ -186,14 +186,14 @@ h1 {
 
 h2 {
 	font-family: YakuHanJP, "Hiragino Sans", Meiryo, sans-serif;
-	font-size: 18pt;	
+	font-size: 20pt;	
 	padding: .25em 0 .5em .75em;
 	border-left: 6px solid #ccc;
 	border-bottom: 1px solid #ccc;
 }
 
 p{
-	margin: 18pt 0;
+	margin: 14pt 0;
 }
 
 .textOnImage { /*画像上に文字*/
