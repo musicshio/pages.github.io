@@ -169,8 +169,6 @@ html {
 
 
 .article{
-    overflow-x: auto;
-    overflow-y: hidden;
 }
 
 .page-header{
@@ -235,4 +233,7 @@ p{
   opacity: 0.6;
   }
 
-
+.eqnarray{	
+    overflow-x: auto;
+    overflow-y: hidden;
+}
