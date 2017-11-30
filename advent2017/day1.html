@@ -68,21 +68,21 @@
 				<ul>
 					<li>江戸時代に握り寿司が誕生して以来、寿司は<strong>屋台が主流のファストフード</strong>であった。と言っても安いかどうかではなく、手軽に食べられるということである。大正9年発表の『小僧の神様』(志賀直哉)には、一つ四銭～六銭という記述がある。当時のうどん一杯が七銭ほどで会ったことを考えると決して安くはないが、大きさは一口では食べきれないほどであったらしい。<strong>小腹が空いたときにスナック感覚で食べる</strong>ものというわけである。今でも回転寿司に行って3皿だけ食べるということも可能である。</li>
 					<li>寿司は<strong>ネタによって種類が豊富であるため、どれか当たる。</strong>例えばカレーライスなどは可変部分の分散が小さいためルーが嫌いならどうしようもないが、寿司は米さえ大丈夫なら多種多様なネタの中からせいぜい10～20種類好きなものがあればよいため、寿司を好きな人が多いと思われる。実際、ネタの種類数を$n$、ネタ$i$の評価を$0 < u(i) < 1$ <br>と置く。$u(i)$が一様分布に従うとき、ちょうど$m$種類が満足度$\alpha$を上回る確率は$m$に関する二項分布を成す。
-					<div class="math">
+					<div class="eqnarray">
 						$$\begin{eqnarray}
 						P[X = k] &=& {}_{n} \mathrm{C}_k p(u(i)>\alpha)^k p(u(i) \leq \alpha)^{n-k}\\
 						&=& {}_{n} \mathrm{C}_k (1-\alpha)^k \alpha^{n-k}
 						\end{eqnarray}$$
 					</div>
 					二項分布$B(n, 1-\alpha)$は正規分布$N(n(1-\alpha),n\alpha(1 − \alpha))$と近似できる。
-					<div class="math">
+					<div class="eqnarray">
 						$$\begin{eqnarray}
 						P[X = k] &\simeq& \frac{1}{\sqrt{2\pi n\alpha(1 − \alpha)}} \exp \biggl(-\frac{(k-n(1-\alpha))^2}{2n\alpha(1 − \alpha)} \biggr)\\
 						&=& f(x, \mu, \sigma)
 						\end{eqnarray}$$
 					</div>
 					そのとき、満足度が$\alpha$を上回る寿司が$m$種類を下回る確率は、下側累積確率で求められる。
-					<div class="math">
+					<div class="eqnarray">
 						$$
 						p(m, \mu, \sigma) = \int_{-\infty}^m f(t, \mu, \sigma) dt
 						$$
