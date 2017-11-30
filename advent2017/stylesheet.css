@@ -153,39 +153,24 @@ navbar
 }
 
 
-/*非モバイルファースト*/
-
-@media only screen and (max-width : 1200px) {
- 
+html {
+    font-size : 75%; 
 }
  
-/* Mサイズ、デスクトップ : Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
- 
+@media screen and (min-width : 768px){
+    html{ font-size : 87.5%;} 
 }
  
-/* Sサイズ、タブレット : Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
- 
+@media screen and (min-width : 1024px) {
+    html{font-size : 100%}; 
 }
- 
-/* XSサイズ : Extra Small Devices, Phones */  
-@media only screen and (max-width : 480px) {
- 
-}
- 
-/* カスタム, iPhone Retinaディスプレイ */ 
-@media only screen and (max-width : 320px) {
-
-    
-}
-
-
 
 /*ここから記事用*/
 
 
 .article{
+    overflow-x: auto;
+    overflow-y: hidden;
 }
 
 .page-header{
@@ -207,21 +192,21 @@ navbar
 
 h1 {
 	font-family: YakuHanJP, "Hiragino Sans", Meiryo, sans-serif;
-	font-size: 25pt;
+	font-size: 2em;
 	padding-bottom: .5em;
 	border-bottom: 1px solid #ccc;
 }
 
 h2 {
 	font-family: YakuHanJP, "Hiragino Sans", Meiryo, sans-serif;
-	font-size: 18pt;
+	font-size: 1.5em;
 	padding: .25em 0 .5em .75em;
 	border-left: 6px solid #ccc;
 	border-bottom: 1px solid #ccc;
 }
 
 p{
-	margin: 14pt 0;
+	margin: 1em 0;
 }
 
 .textOnImage { /*画像上に文字*/
@@ -250,7 +235,4 @@ p{
   opacity: 0.6;
   }
 
-.math{
-	overflow-x:auto;
-	overflow-y:hidden;
-}
+
