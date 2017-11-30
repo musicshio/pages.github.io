@@ -165,13 +165,14 @@ navbar
 }
 
 .page-header h1 small{
+	font-size: 70%;
 	color: #ccc;
 }
 
 .articleMain{
 	line-height: 3;
 	font-family: YakuHanMP, "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
-	font-size: 14pt;
+	font-size: 12pt;
 	padding: 50pt 0;
 	text-align: justify;
 }
@@ -185,7 +186,7 @@ h1 {
 
 h2 {
 	font-family: YakuHanJP, "Hiragino Sans", Meiryo, sans-serif;
-	font-size: 20pt;	
+	font-size: 18pt;	
 	padding: .25em 0 .5em .75em;
 	border-left: 6px solid #ccc;
 	border-bottom: 1px solid #ccc;
