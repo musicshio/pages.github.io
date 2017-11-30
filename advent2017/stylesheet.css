@@ -204,7 +204,7 @@ h2 {
 }
 
 p{
-	margin: 1em 0;
+	margin: 0.8em 0;
 }
 
 .textOnImage { /*画像上に文字*/
@@ -233,7 +233,8 @@ p{
   opacity: 0.6;
   }
 
-.eqnarray{	
-    overflow-x: auto;
-    overflow-y: hidden;
-}
+/*.eqnarray{	*/
+/*    overflow-x: auto;*/
+/*    overflow-y: hidden;*/
+/*}*/
+
