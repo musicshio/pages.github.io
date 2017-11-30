@@ -153,9 +153,36 @@ navbar
 }
 
 
+/*非モバイルファースト*/
+
+@media only screen and (max-width : 1200px) {
+ 
+}
+ 
+/* Mサイズ、デスクトップ : Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+ 
+}
+ 
+/* Sサイズ、タブレット : Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+ 
+}
+ 
+/* XSサイズ : Extra Small Devices, Phones */  
+@media only screen and (max-width : 480px) {
+ 
+}
+ 
+/* カスタム, iPhone Retinaディスプレイ */ 
+@media only screen and (max-width : 320px) {
+    
+}
+
 
 
 /*ここから記事用*/
+
 
 .article{
 }
@@ -187,7 +214,7 @@ h1 {
 
 h2 {
 	font-family: YakuHanJP, "Hiragino Sans", Meiryo, sans-serif;
-	font-size: 18pt;	
+	font-size: 18pt;
 	padding: .25em 0 .5em .75em;
 	border-left: 6px solid #ccc;
 	border-bottom: 1px solid #ccc;
