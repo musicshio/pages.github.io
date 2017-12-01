@@ -225,6 +225,7 @@ ul, ol {
 
 p{
 	margin: 0.5em 0;
+	text-indent: 1em;
 }
 
 .textOnImage { /*画像上に文字*/
