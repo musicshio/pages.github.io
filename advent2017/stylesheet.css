@@ -150,7 +150,7 @@ navbar
 }
 
 .prevbox img{
-	width: 100%;
+	height: 60%;
 }
 
 
@@ -247,6 +247,7 @@ p{
   font-size: 4em;/*サイズ2倍*/
   font-family :Quicksand, sans-serif;/*Google Font*/
   white-space: nowrap;
+	text-indent: 0em;
   }
 
 .textOnImage img {
