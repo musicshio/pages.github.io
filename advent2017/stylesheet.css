@@ -196,7 +196,7 @@ html {
 .articleMain{
 	line-height: 3;
 	font-family: YakuHanMP, "Hiragino Mincho ProN", "Yu Mincho", YuMincho, serif;
-	padding: 50pt 0;
+	padding: 20pt 0;
 	text-align: justify;
 }
 
@@ -212,13 +212,19 @@ h1 {
 h2 {
 	font-family: YakuHanJP, "Hiragino Sans", Meiryo, sans-serif;
 	font-size: 1.5em;
+	margin: 2em 0 1em 0;
 	padding: .25em 0 .5em .75em;
 	border-left: 6px solid #ccc;
 	border-bottom: 1px solid #ccc;
 }
 
+ul, ol {
+	padding-left: 25px;
+	padding-top: 10px;
+	}
+
 p{
-	margin: 0.8em 0;
+	margin: 0.5em 0;
 }
 
 .textOnImage { /*画像上に文字*/
@@ -259,9 +265,12 @@ p{
 
 
 /* SNSボタン */
+
 .btn-social {
-	padding: 10px;   
-  color: white;
+	text-align: center;  
+	color: white;
+	width: 100%;
+	margin-top: 10px;
 }
 
 /* Facebook */
