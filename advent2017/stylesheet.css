@@ -162,17 +162,17 @@ navbar
 }
 
 
-/*html {*/
-/*    font-size : 0.9em; */
-/*}*/
-/* */
-/*@media screen and (min-width : 768px){*/
-/*    html{ font-size : 0.95em;} */
-/*}*/
-/* */
-/*@media screen and (min-width : 1024px) {*/
-/*    html{font-size : 100%}; */
-/*}*/
+html {
+    font-size : 0.3em; 
+}
+ 
+@media screen and (min-width : 768px){
+    html{ font-size : 0.95em;} 
+}
+ 
+@media screen and (min-width : 1024px) {
+    html{font-size : 100%}; 
+}
 
 .row{
 	margin-bottom: 30px;
