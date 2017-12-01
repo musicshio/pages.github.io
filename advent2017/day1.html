@@ -40,12 +40,12 @@
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#">shio</a>
+    <a class="navbar-brand" href="../index.html">shio</a>
 
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="index.html">Top <span class="sr-only">(top)</span></a>
       </ul>
 <!--      <form class="form-inline my-2 my-lg-0">-->
 <!--        <input class="form-control mr-sm-2" type="text" placeholder="Search">-->
@@ -54,94 +54,98 @@
     </div>
   </nav>
 
-  <div class="container">
-	<div class="row">
-		<div class="article col">
-			<div class="page-header">
-    			<h1>寿司とは何かを考えるpun <small>Introduction</small></h1>
-			</div>
-			<div class="articleMain">
-				<h2>なぜ寿司が好きか</h2>
-				<p><strong>私は寿司が好きである。</strong></p>
-				<p>そして恐らく<strong>日本国民の多くが寿司を好いている</strong>と私は考えている。</p>
-				その根拠は挙げていけばキリがないのだが、いくつか好きな理由を考えてみる。<br>
-				<ul>
-					<li>江戸時代に握り寿司が誕生して以来、寿司は<strong>屋台が主流のファストフード</strong>であった。と言っても安いかどうかではなく、手軽に食べられるということである。大正9年発表の『小僧の神様』(志賀直哉)には、一つ四銭～六銭という記述がある。当時のうどん一杯が七銭ほどで会ったことを考えると決して安くはないが、大きさは一口では食べきれないほどであったらしい。<strong>小腹が空いたときにスナック感覚で食べる</strong>ものというわけである。今でも回転寿司に行って3皿だけ食べるということも可能である。</li>
-					<li>寿司は<strong>ネタによって種類が豊富であるため、どれか当たる。</strong>例えばカレーライスなどは可変部分の分散が小さいためルーが嫌いならどうしようもないが、寿司は米さえ大丈夫なら多種多様なネタの中からせいぜい10～20種類好きなものがあればよいため、寿司を好きな人が多いと思われる。実際、ネタの種類数を$n$、ネタ$i$の評価を$0 < u(i) < 1$ <br>と置く。$u(i)$が一様分布に従うとき、ちょうど$m$種類が満足度$\alpha$を上回る確率は$m$に関する二項分布を成す。
-					<div class="eqnarray">
-						$$\begin{eqnarray}
-						P[X = k] &=& {}_{n} \mathrm{C}_k p(u(i)>\alpha)^k p(u(i) \leq \alpha)^{n-k}\\
-						&=& {}_{n} \mathrm{C}_k (1-\alpha)^k \alpha^{n-k}
-						\end{eqnarray}$$
-					</div>
-					二項分布$B(n, 1-\alpha)$は正規分布$N(n(1-\alpha),n\alpha(1 − \alpha))$と近似できる。
-					<div class="eqnarray">
-						$$\begin{eqnarray}
-						P[X = k] &\simeq& \frac{1}{\sqrt{2\pi n\alpha(1 − \alpha)}} \exp \biggl(-\frac{(k-n(1-\alpha))^2}{2n\alpha(1 − \alpha)} \biggr)\\
-						&=& f(x, \mu, \sigma)
-						\end{eqnarray}$$
-					</div>
-					そのとき、満足度が$\alpha$を上回る寿司が$m$種類を下回る確率は、下側累積確率で求められる。
-					<div class="eqnarray">
-						$$
-						p(m, \mu, \sigma) = \int_{-\infty}^m f(t, \mu, \sigma) dt
-						$$
-					</div>
-					例えば$n=100, \alpha=0.8$であるとき、$\mu = 20, \sigma^2 = 16$である。この時、10種類食べて一つでも満足度80%を下回るものを食べなければならない確率は<strong>なんと0.44%である</strong>。寿司屋に何が売っているかわからなくても、寿司屋にネタが100種類あれば、10皿食べる人は<strong>99.56%の確率で10個すべて"80%満足度以上の寿司"を食べられる</strong>のである。これはもう、店に困ったら寿司屋に行くべきである。
-					</li>
-					<li>寿司と同じランクにあると思われる「焼肉」と比較しても、<strong>安価にアクセスできる</strong>。もちろん高級な寿司と焼肉はどちらも手が出ないが、ディナーだと安くても2000～3000円かかる焼肉に対し、寿司は100円の回転寿司に行けば10皿1080円で食べることができる。</li>
-				</ul>
-				<p>ちなみに私が好きな寿司ネタは以下に示す通りである。</p>
-				<ul>
-					<li>つぶ貝</li>
-					<li>あん肝</li>
-					<li>えんがわ</li>
-					<li>鬢長</li>
-					<li>トロ月見</li>
-				</ul><br>
-				<p><strong>すごくどうでもいい。</strong></p>
-				<br>
-				<p>そんなわけでそこそこの頻度で私は回転寿司に行く。</p>
-				<p>回転寿司に行くし、何なら<strong>ものすごい頻度で無意識に声が出る</strong>。</p>
-				<br>
-				<br>
-				<div class="textOnImage">
-					<img src="img/sushi.jpg" alt="寿司" title="寿司">
-					<p>寿司食べたい</p>				
+	<div class="container">
+		<div class="row">
+			<div class="article col">
+				<div class="page-header">
+					<h1>寿司とは何かを考える <small>Introduction</small></h1>
 				</div>
-				<br>
-				<br>
-				<p>授業中にも、友達と遊んでいる時にも、<strong>寿司を食べている時でさえ</strong>、言ってしまうのである。<strong>「寿司食べたい」。</strong></p>
-				<p>もう自分でもわからない。なぜここまで寿司を食べたいのか。いや、<strong>むしろ本当に寿司が食べたいのかも不明である</strong>。というか<strong>寿司って何？おいしいの？</strong></p>
-				<h2>寿司の定義</h2>
-				<p>以下の記事を読んでみてほしい。</p>
-				<br>
-				<a href="https://kakuyomu.jp/works/1177354054882513458/episodes/1177354054882513483"><strong>スシの定義</strong></a>
-				<br>
-				<br>
-				<p>いかがだっただろうか。</p>
-				<br>
-				<p>いやほんとに読んだ？</p>
-				<br>
-				<p>ほんとに読んだならいいです。</p>
-				<p><strong>寿司とは何か、これは本当に難しい問題である</strong>。生ハム、ハンバーグ、カリフォルニアロール...。日に日に進化する創作寿司を前に、<strong>外延的定義は意味を成さない</strong>。</p>
-				<br>				
-				<div align="center">
-					<img src="img/originalsushi.jpeg" alt="創作寿司" title="創作寿司" width=50%>
+				<div class="articleMain">
+					<h2>なぜ寿司が好きか</h2>
+					<p><strong>私は寿司が好きである。</strong></p>
+					<p>そして恐らく<strong>日本国民の多くが寿司を好いている</strong>と私は考えている。</p>
+					その根拠は挙げていけばキリがないのだが、いくつか好きな理由を考えてみる。<br>
+					<ul>
+						<li>江戸時代に握り寿司が誕生して以来、寿司は<strong>屋台が主流のファストフード</strong>であった。と言っても安いかどうかではなく、手軽に食べられるということである。大正9年発表の『小僧の神様』(志賀直哉)には、一つ四銭～六銭という記述がある。当時のうどん一杯が七銭ほどで会ったことを考えると決して安くはないが、大きさは一口では食べきれないほどであったらしい。<strong>小腹が空いたときにスナック感覚で食べる</strong>ものというわけである。今でも回転寿司に行って3皿だけ食べるということも可能である。</li>
+						<li>寿司は<strong>ネタによって種類が豊富であるため、どれか当たる。</strong>例えばカレーライスなどは可変部分の分散が小さいためルーが嫌いならどうしようもないが、寿司は米さえ大丈夫なら多種多様なネタの中からせいぜい10～20種類好きなものがあればよいため、寿司を好きな人が多いと思われる。実際、ネタの種類数を$n$、ネタ$i$の評価を$0 < u(i) < 1$ <br>と置く。$u(i)$が一様分布に従うとき、ちょうど$m$種類が満足度$\alpha$を上回る確率は$m$に関する二項分布を成す。
+						<div class="articleFormula">
+							$$\begin{eqnarray}
+							P[X = k] &=& {}_{n} \mathrm{C}_k p(u(i)>\alpha)^k p(u(i) \leq \alpha)^{n-k}\\
+							&=& {}_{n} \mathrm{C}_k (1-\alpha)^k \alpha^{n-k}
+							\end{eqnarray}$$
+						</div>
+						二項分布$B(n, 1-\alpha)$は正規分布$N(n(1-\alpha),n\alpha(1 − \alpha))$と近似できる。
+						<div class="articleFormula">
+							$$\begin{eqnarray}
+							P[X = k] &\simeq& \frac{1}{\sqrt{2\pi n\alpha(1 − \alpha)}} \exp \biggl(-\frac{(k-n(1-\alpha))^2}{2n\alpha(1 − \alpha)} \biggr)\\
+							&=& f(x, \mu, \sigma)
+							\end{eqnarray}$$
+						</div>
+						そのとき、満足度が$\alpha$を上回る寿司が$m$種類を下回る確率は、下側累積確率で求められる。
+						<div class="articleFormula">
+							$$
+							p(m, \mu, \sigma) = \int_{-\infty}^m f(t, \mu, \sigma) dt
+							$$
+						</div>
+						例えば$n=100, \alpha=0.8$であるとき、$\mu = 20, \sigma^2 = 16$である。この時、10種類食べて一つでも満足度80%を下回るものを食べなければならない確率は<strong>なんと0.44%である</strong>。寿司屋に何が売っているかわからなくても、寿司屋にネタが100種類あれば、10皿食べる人は<strong>99.56%の確率で10個すべて"80%満足度以上の寿司"を食べられる</strong>のである。これはもう、店に困ったら寿司屋に行くべきである。
+						</li>
+						<li>寿司と同じランクにあると思われる「焼肉」と比較しても、<strong>安価にアクセスできる</strong>。もちろん高級な寿司と焼肉はどちらも手が出ないが、ディナーだと安くても2000～3000円かかる焼肉に対し、寿司は100円の回転寿司に行けば10皿1080円で食べることができる。</li>
+					</ul>
+					<p>ちなみに私が好きな寿司ネタは以下に示す通りである。</p>
+					<ul>
+						<li>つぶ貝</li>
+						<li>あん肝</li>
+						<li>えんがわ</li>
+						<li>鬢長</li>
+						<li>トロ月見</li>
+					</ul><br>
+					<p><strong>すごくどうでもいい。</strong></p>
+					<br>
+					<p>そんなわけでそこそこの頻度で私は回転寿司に行く。</p>
+					<p>回転寿司に行くし、何なら<strong>ものすごい頻度で無意識に声が出る</strong>。</p>
 					<br>
 					<br>
-					<p>あなたはだれ？</p>
+					<div class="textOnImage">
+						<img src="img/sushi.jpg" alt="寿司" title="寿司">
+						<p>寿司食べたい</p>				
+					</div>
 					<br>
-				</div>
+					<br>
+					<p>授業中にも、友達と遊んでいる時にも、<strong>寿司を食べている時でさえ</strong>、言ってしまうのである。<strong>「寿司食べたい」。</strong></p>
+					<p>もう自分でもわからない。なぜここまで寿司を食べたいのか。いや、<strong>むしろ本当に寿司が食べたいのかも不明である</strong>。というか<strong>寿司って何？おいしいの？</strong></p>
+					<h2>寿司の定義</h2>
+					<p>以下の記事を読んでみてほしい。</p>
+					<br>
+					<a href="https://kakuyomu.jp/works/1177354054882513458/episodes/1177354054882513483"><strong>スシの定義</strong></a>
+					<br>
+					<br>
+					<p>いかがだっただろうか。</p>
+					<br>
+					<p>いやほんとに読んだ？</p>
+					<br>
+					<p>ほんとに読んだならいいです。</p>
+					<p><strong>寿司とは何か、これは本当に難しい問題である</strong>。生ハム、ハンバーグ、カリフォルニアロール...。日に日に進化する創作寿司を前に、<strong>外延的定義は意味を成さない</strong>。</p>
+					<br>				
+					<div align="center">
+						<img src="img/originalsushi.jpeg" alt="創作寿司" title="創作寿司" width=50%>
+						<br>
+						<br>
+						<p>あなたはだれ？</p>
+						<br>
+					</div>
 				
-				<br>
-				<h2>References</h2>
-				<a href="http://www.sushiwalking.com/history/">寿司の歴史-お寿司屋さんの歩き方</a>
+					<br>
+					<h2>References</h2>
+					<a href="http://www.sushiwalking.com/history/">寿司の歴史-お寿司屋さんの歩き方</a>
+				</div>
 			</div>
 		</div>
-	</div>
 	</div><!-- /.container -->
-
+	<div class="container">
+		<a class="btn btn-social btn-fb col-xs-6 col-sm-4" href="https://www.facebook.com/sharer/sharer.php?u=https://musicshio.github.io/sites/advent2017/day1.html" role="button"><i class="fa fa-facebook left"></i> Facebook</a>
+		<a class="btn btn-social btn-tw col-xs-6 col-sm-4" href="http://twitter.com/share?url=https://musicshio.github.io/sites/advent2017/day1.html&text=%E5%AF%BF%E5%8F%B8%E3%81%A8%E3%81%AF%E4%BD%95%E3%81%8B%E3%82%92%E8%80%83%E3%81%88%E3%82%8B+-+Advent+Calendar+2017" role="button"><i class="fa fa-twitter left"></i> Twitter</a>
+		<a class="btn btn-social btn-gplus col-xs-6 col-sm-4" href="https://plusone.google.com/_/+1/confirm?hl=ja&url=https://musicshio.github.io/sites/advent2017/day1.html" role="button"><i class="fa fa-google-plus left"></i> Google +</a>	
+	</div>
   <!-- jQuery first, then Tether, then Bootstrap JS. -->
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
