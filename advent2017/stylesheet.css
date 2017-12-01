@@ -163,11 +163,11 @@ navbar
 
 
 html {
-    font-size : 0.8em; 
+    font-size : 0.9em; 
 }
  
 @media screen and (min-width : 768px){
-    html{ font-size : 87.5%;} 
+    html{ font-size : 0.95em;} 
 }
  
 @media screen and (min-width : 1024px) {
