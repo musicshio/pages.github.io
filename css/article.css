@@ -277,31 +277,48 @@ p{
 }
 
 
-
-
-/*share*/
-
-
-/* SNSボタン */
-
-.btn-social {
-	text-align: center;  
-	color: white;
-	width: 100%;
-	margin-top: 10px;
+blockquote {
+    position: relative;
+    margin: 30px;
+    padding: 10px 12px;
+    box-sizing: border-box;
+    font-style: italic;
+    color: #464646;
+    border-left: solid 40px #c4c4c4;
+    background: #f3f3f3;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
 }
 
-/* Facebook */
-.btn-fb {
-    background-color: #3B5998;
+blockquote:before{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: -32px;
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    vertical-align: middle;
+    content: "\f10d";
+    font-family: FontAwesome;
+    color: #FFF;
+    font-size: 22px;
+    line-height: 1;
 }
 
-/* Twitter */
-.btn-tw {
-    background-color: #00aced;
+blockquote p {
+    position: relative;
+    padding: 10px;
+    margin: 10px 10px 10px 20px;
+    z-index: 3;
+    line-height: 1.7;
 }
 
-/* Google */
-.btn-gplus {
-    background-color: #dd4b39;
+blockquote cite {
+    display: block;
+    text-align: right;
+    color: #888888;
+    font-size: 0.9em;
 }
+
+
+
