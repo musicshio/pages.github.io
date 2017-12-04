@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Day4 - Advent Calendar 2017</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<!--add CSS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/article.css">
+<!--	// YakuHanJP-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanjp.min.css">
+
+<!--	// YakuHanJPs-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanjp_s.min.css">
+
+<!--	// YakuHanMP-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanmp.min.css">
+
+<!--	// YakuHanMPs-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanmp_s.min.css">
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			tex2jax: {
+				inlineMath: [['$','$'], ['\\(','\\)']], 
+				displayMath: [['$$','$$'], ['\\[','\\]']], 
+				processEscapes: true 
+			}
+		});
+	</script>
+	<script type="text/x-mathjax-config"> 
+		MathJax.Hub.Config({ 
+			"HTML-CSS": { scale: 80, linebreaks: { automatic: true } }, 
+			SVG: { linebreaks: { automatic:true } } })
+	</script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+	</script>
+</head>
+
+<body>
+	<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<a class="navbar-brand" href="../index.html">shio</a>
+
+		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Advent2017</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown01">
+						<a class="dropdown-item" href="index.html">Top</a>
+						<a class="dropdown-item" href="day1.html">Day1</a>
+						<a class="dropdown-item" href="day2.html">Day2</a>
+						<a class="dropdown-item" href="day3.html">Day3</a>
+						<a class="dropdown-item disabled" href="#">Day4</a>
+					</div>
+				</li>
+			</ul>
+<!--      <form class="form-inline my-2 my-lg-0">-->
+<!--        <input class="form-control mr-sm-2" type="text" placeholder="Search">-->
+<!--        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+<!--      </form>-->
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="article col">
+				<div class="page-header">
+					<h1>先験的にネコ <small>教師なし学習と「定義の定義」</small></h1>
+				</div>
+				<div class="articleMain">
+					<h2>ママこれなあに</h2>
+					<br>
+					<br>
+					<div align="center">
+						<p>「ネコってなんですか？」</p>
+					</div>
+					<br>
+					<br>
+					<p>この問に対して、<a href="day2.html">2日目</a>の議論を経た我々は、こう答えることができる。</p>
+					<br>
+					<div align="center">
+						<p>「<strong>ネコとは何か正確に答えることはできないけれど、何か見せてくれたらそれがネコか答えることはできる</strong>よ」</p>
+					</div>
+					<br>
+					<br>
+					<p><strong>言語は「線」であり、「フィルター」であった</strong>。「ネコ」という言葉は、この世の全てから「ネコ」と「ネコでないもの」を分節化するものである。この世に無限に存在する概念に対し、それを判別する判別器は有限の情報量で作ることができるのであった。</p>
+					<p>なんだか狐につままれたようであるが、つまりはそういうことである。<strong>では、我々のその「フィルター」はどのように形成されたのだろうか。</strong></p>
+					<p>我々が言語を獲得した時のことを考えてみよう。</p>
+					<br>
+					<br>
+					<p>「ママこれなあに？」</p>
+					<p>「これはネコよ」</p>
+					<p>「じゃあこれは？」</p>
+					<p>「これもネコよ」</p>
+					<p>「じゃあこれは？」</p>
+					<p>「<strong>これはネコじゃないものよ</strong>」</p>
+					<br>
+					<br>
+					<p>恐らく、このようにして<strong>「ネコ」と「ネコでないもの」の具体例を見ていくにつれ、「ああ、体毛に覆われていたてたらネコなのか」「耳があったらネコなのか」「二足歩行するものはネコじゃないのか」などと自分の中でフィルターを形成していく</strong>と思います。</p>
+					<h2>帰納的にネコ</h2>
+					<p>これが機械学習で言うところの「<strong>教師あり学習</strong>」です。問題と正解の組を大量にインプットしていくことで、新しい問題に対応するための「フィルター=判別器」を作るわけです。</p>
+					<p><strong>人間が論理的に作れるのだから機械でも作れるはず</strong>で、実際に作ってモデルを公開している方を見つけた。</p>
+					<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:680px;" title="OpenCVで猫検出 (モデル配布) - Qiita" src="https://hatenablog-parts.com/embed?url=https://qiita.com/wellflat/items/c6ffae99be35cecc5680" frameborder="0" scrolling="no"></iframe>
+					<p>この方は吉祥寺などの<strong>猫カフェに足繁く通い、ネコの写真を400枚ほど撮りためた</strong>そうだ。ネコかわいい。</p>
+					<br>
+					<div align="center">
+						<a data-flickr-embed="true" data-header="true" data-footer="true"  href="https://www.flickr.com/photos/95962563@N02/albums/72157638877703553" title="ねこカフェ"><img src="https://farm4.staticflickr.com/3798/11363620406_b0299d9bfa_z.jpg" width="80%" alt="ねこカフェ"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+					</div>
+					<h2>アポステリオリにネコ</h2>
+					<p>しかし、である。我々は「これはネコ」という模範解答を教わって来続けたわけであるが、<strong>その模範解答は誰が作ったのだろう</strong>。また、<strong>我らは世の中で誰も考えていないようなことを考えることができる</strong>。新しく言葉を作って、その意味を他人に伝えようとすることができる。これはどう説明できるのであろうか。</p>
+					<p>ここで考えられる問題はの本質はこうである。「ネコ」というフィルターは、「体毛に覆われている」「耳が有る」「四足歩行する」などという<strong>細かいフィルターに分けることができる</strong>。(もちろん毛を刈ったネコも、事故で脚を失ったネコもネコである。ここでいうフィルターはこんな簡単なものではないが、わかり易さのため単純化している。)</p>
+					<p>ということは、<strong>その細かいフィルターももっと細かいフィルターに分けられるはず</strong>である。「耳」は「器官である」「音を検知する」などと分割できる。つまり、<strong>「ネコ」という概念の「定義」はその他のいろいろな概念の組み合わせであり、その概念たちも、もっと根源的な概念の組み合わせで出来ている</strong>のだ。</p>
+					<p>では、それを遡っていった先には何が有るのだろう？</p>
+					<h2>右ってなんですか</h2>
+					<p>ここで注意しなければならないのは、「<strong>循環参照</strong>」である。<strong>フィルターAの中にフィルターBがあり、フィルターBの中にフィルターAがある、などということがあってはならない</strong>。例えば「左右」。「右」を「左でない方」、「左」を「右でない方」と言ってしまっては、結局何も言えていないこととなる。また、「北を向いた時の東が右」などと言ったとして一見良さそうであるが、<strong>地球の自転軸によって存在する２つの極のどちらを「北」とするかが恣意的である</strong>ため、「右」を表現できていない。</p>
+					<p>この問題に真剣に向き合ったのが「<strong><a href="https://ja.wikipedia.org/wiki/%E3%82%AA%E3%82%BA%E3%83%9E%E5%95%8F%E9%A1%8C">オズマ問題</a></strong>」である。「<strong>宇宙人に言葉や論理だけで左右を伝えることができるか</strong>」という問題である。</p>
+					<ul>
+						<li>「心臓の有る方が左」→宇宙人は心臓が右かもしれない</li>
+						<li>「２つのベクトルの外積ベクトルの向き」→これは恣意的である</li>
+						<li>「フレミング右手の法則、アンペール右ねじの法則」→これも恣意的である</li>
+					</ul>
+					<p>この問題に対して李政道・楊振寧の二人が弱い相互作用の中に左右の区別が存在する可能性を示唆し、呉健雄がコバルト60の原子核のβ崩壊においてP対称性の破れを証明した。<strong>(古典)物理学の法則は左右をひっくり返しても成立したが、素粒子の世界ではそうではないのである</strong>。「電子が多く飛び出す軸」と「そうでない軸」が存在するのだ。これにより、宇宙人に概念としての「左右」を伝えることができるわけである。</p>
+					<p>とはいえ、この話はその宇宙人が<strong>物質で出来ている宇宙に生きていることが前提である</strong>。反物質でできた世界ではこの「左右」も逆になってしまう。</p>
+					<p>結局ある概念は別の概念に依存しており、物事を<strong>"絶対的にアプリオリ"に「定義」することは不可能なのである</strong>。</p>
+					<p><strong>それにもかかわらず、われわれは普段から何かしら「定義」を行っている</strong>。これは何を言えているというのであろうか。</p>
+					<h2>ビールジョッキ思想</h2>
+					<p>数学は最初に「公理」というハードコアを仮定し、そこから論理演算を行うことで「定理」を大量生産し、理論体系を成した。</p>
+					<p>ここで、<a href="day2.html">2日目</a>の話を考えると、<strong>数学で使われている言葉はすべて恣意的に置かれている</strong>ので、例えばすべての「直線」という言葉を「テーブル」という言葉に、「点」という言葉を「ビールジョッキ」に置き換えても良いはずなのである。<strong>「2本の直線が1点で交わる」が「2つの机が1つのビールジョッキで交わる」でもよいのである。</strong></p>
+					<p>つまり、数学における「公理」は何を言っているかを考えた時、<strong>「あるものが満たすべき性質」を述べているが、「そのもの自体に関しては未定義」なのである</strong>。ユークリッドの原論の第1公準として「点と点を直線で結ぶ事ができる」というものがある。ここで「点」「直線」が何かは置いておいて、<strong>この文章は概念を指し示している</strong>。「結ぶことができるかできないかわからない」ところから「結ぶことができる」と言ったのでこれは価値のある言説である。</p>
+					<p>ではユークリッドは「点」と「直線」をどう定義しているのか。</p>
+					<ul><strong>定義</strong>
+						<li>点は部分をもたないものである.</li>
+						<li>線とは幅のない長さである.</li>
+					</ul>
+					<p>これはいけない。<strong>「部分」「幅」「長さ」が定義されていないので、たらい回しにしているだけで結局ちゃんとは定義できていない。</strong></p>
+					<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:680px;" title="park20.wakwak.com/~ichikawa-clinic/2-non-definition.htm" src="https://hatenablog-parts.com/embed?url=http://park20.wakwak.com/~ichikawa-clinic/2-non-definition.htm" frameborder="0" scrolling="no"></iframe>
+					<p>結局、厳密に考えれば考えるほど、「定義」は「無定義」にするしかないのである。</p>
+					<h2>定義の定義</h2>
+					<p>ここまで考えると、「定義の定義」が問題になる。定義とは何なのか。というか定義という言葉が定義されていない状態で定義という言葉を定義できるのか。だんだん何を言っているのかわからなくなってきた。</p>
+					<br>
+					<p>機械学習の話に戻ろう。機械学習においては「教師あり学習」のほかに「<strong>教師なし学習</strong>」が存在する。「<strong>問題だけ大量に与えられている(解答は与えられていない)状態でがんばる</strong>」というものである。そんなことができるのか。<strong>できるのである。</strong></p>
+					<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:680px;" title="機械学習ってなんだろう - learning.ikeay.net" src="https://hatenablog-parts.com/embed?url=http://learning.ikeay.net/entry/2016/05/02/200503" frameborder="0" scrolling="no"></iframe>
+					<p>「クラスタリング」という概念がある。例えば、</p>
+					<div align="center">
+						<img src="img/cluster1.png" alt="cluster1" title="クラスタ1" width=90%>
+					</div>
+					<p>こんな点たちがあれば、</p>
+					<div align="center">
+						<img src="img/cluster2.png" alt="cluster2" title="クラスタ2" width=90%>
+					</div>
+					<p>こんな線を自然と引くことができる。<strong>もちろん皆がこれと1mm違わず同じ線を引くことはない。しかし、このあたりに線を引けることは間違いない</strong>のである。そして重要なのは、<strong>この線が「アプリオリに」存在することができる</strong>ことだ。きっと宇宙人に聞いたところでこう線を引くであろう。そして、</p>
+					<div align="center">
+						<img src="img/cluster3.png" alt="cluster3" title="クラスタ3" width=90%>
+					</div>
+					<p></p>
+					<p>このように２つのグループに「名前をつけた」とき、</p>
+					<div align="center">
+						<img src="img/cluster4.png" alt="cluster4" title="クラスタ4" width=90%>
+					</div>
+					<p>この赤い点はグループBに属すであろう。</p>
+					<p>つまり、まず<strong>要素自体はこの世界に理由なく存在しており、それに対する「分節化」のうち、先験的に存在できるものが存在する</strong>のである。例えば<strong>「重力の働く方向」と「その逆」という分類は人間が考える前にこの世界に存在しており、その概念にたいして「下」「上」と名前を付ける</strong>わけである。<strong>この「名付け」を「定義」と呼ぶならば、従来の「定義」を「公理」と「名付け」に分解することができ、「定義の定義」として意味のあるものを得られるのではないか。</strong></p>
+					<h2>アプリオリにネコ</h2>
+					<p>2012年にこんなニュースが流れた。</p>
+					<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:680px;" title="Googleの猫認識 (Deep Learning) - 大人になってからの再学習" src="https://hatenablog-parts.com/embed?url=http://zellij.hatenablog.com/entry/20130608/p1" frameborder="0" scrolling="no"></iframe>
+					<p>Googleが作成した人工知能が教師なし学習を行ったところ、様々なクラスタリングを行った結果、<strong>我々が今日「ネコ」と呼ぶ概念に相当するものに反応するニューロンが生まれた</strong>のである。</p>
+					<p>教師なし学習なので、この世に「ネコ」という分節化が存在することを誰も教えていない。<strong>AIがひとりでに、「ネコ」と「ネコでないもの」の間に線が引けると思ったのである。</strong></p>
+					<br>
+					<br>
+					<p>ネコという言葉は、もともとこの世に理由なく存在している概念に対して名前を付けたものなのである。</p>
+					<br>
+					<br>
+					<h2>いっぱい考えて疲れたのでかわいいネコで癒やされてください</h2>
+					<div align="center">
+						<img src="img/neko1.jpg" alt="neko1" title="ネコ1" width=80%>
+					</div>
+					<br>
+					<br>
+					<div align="center">
+						<img src="img/neko2.jpg" alt="neko2" title="ネコ2" width=80%>
+					</div>
+					<br>
+					<br>
+					<div align="center">
+						<img src="img/neko3.jpg" alt="neko3" title="ネコ3" width=80%>
+					</div>
+					<br>
+					<br>
+					<div align="center">
+						<img src="img/neko4.jpg" alt="neko4" title="ネコ4" width=80%>
+					</div>
+					<br>
+					<br>
+					<div align="center">
+						<img src="img/neko5.jpg" alt="neko5" title="ネコ5" width=80%>
+					</div>
+					<div align="right">
+						<p>photos by shio      </p>
+					</div>
+					<br>
+					<br>
+					<br>
+					<br>
+					<div align="center">
+						<p>にゃーん</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- /.container -->
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6 col-sm-4">
+				<a class="btn btn-social btn-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://musicshio.github.io/sites/advent2017/day4.html" role="button"><i class="fa fa-facebook left"></i> Facebook</a>
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<a class="btn btn-social btn-tw" href="http://twitter.com/share?url=https://musicshio.github.io/sites/advent2017/day4.html&text=先験的にネコ+-+Advent+Calendar+2017" role="button"><i class="fa fa-twitter left"></i> Twitter</a>
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<a class="btn btn-social btn-gplus" href="https://plusone.google.com/_/+1/confirm?hl=ja&url=https://musicshio.github.io/sites/advent2017/day4.html" role="button"><i class="fa fa-google-plus left"></i> Google +</a>
+			</div>
+		</div>
+	</div>
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>
