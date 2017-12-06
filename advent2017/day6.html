@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Day6 - Advent Calendar 2017</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<!--add CSS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/article.css">
+<!--	// YakuHanJP-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanjp.min.css">
+
+<!--	// YakuHanJPs-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanjp_s.min.css">
+
+<!--	// YakuHanMP-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanmp.min.css">
+
+<!--	// YakuHanMPs-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanmp_s.min.css">
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			tex2jax: {
+				inlineMath: [['$','$'], ['\\(','\\)']], 
+				displayMath: [['$$','$$'], ['\\[','\\]']], 
+				processEscapes: true 
+			}
+		});
+	</script>
+	<script type="text/x-mathjax-config"> 
+		MathJax.Hub.Config({ 
+			"HTML-CSS": { scale: 80, linebreaks: { automatic: true } }, 
+			SVG: { linebreaks: { automatic:true } } })
+	</script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+	</script>
+</head>
+
+<body>
+	<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<a class="navbar-brand" href="../index.html">shio</a>
+
+		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Advent2017</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown01">
+						<a class="dropdown-item" href="index.html">Top</a>
+						<a class="dropdown-item" href="day1.html">Day1</a>
+						<a class="dropdown-item" href="day2.html">Day2</a>
+						<a class="dropdown-item" href="day3.html">Day3</a>
+						<a class="dropdown-item" href="day4.html">Day4</a>
+						<a class="dropdown-item" href="day5.html">Day5</a>
+						<a class="dropdown-item disabled" href="#">Day6</a>
+					</div>
+				</li>
+			</ul>
+<!--      <form class="form-inline my-2 my-lg-0">-->
+<!--        <input class="form-control mr-sm-2" type="text" placeholder="Search">-->
+<!--        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+<!--      </form>-->
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="article col">
+				<div class="page-header">
+					<h1>夕焼けは赤いのか <small>科学と哲学の間</small></h1>
+				</div>
+				<div class="articleMain">
+					<h2>夕焼けはなぜ赤いのか</h2>
+					<div align="center">
+						<img src="img/dusk.jpg" alt="dusk" title="夕焼け" width=90%>
+					</div>
+					<br>
+					<p>昼間の青空、夜の星空。</p>
+					<br>
+					<p>その合間の数十分、西の空が赤く染まる夕焼け。</p>
+					<br>
+					<p><strong>なぜ夕方に空が赤くなるのだろう。</strong>あなたは説明できるだろうか。</p>
+					<h2>科学的考察</h2>
+					<p>そもそも色というのは、<strong>光が網膜に映ることで知覚される</strong>。しかし空は発光していない。ではどこから光が来ているか。<strong>空気中の微小な塵に太陽光がぶつかり、散乱されて我らの目に届く</strong>わけである。</p>
+					<p>ではなぜ太陽光は白いのに夕焼けは赤いのか。それは、<strong>太陽光には様々なスペクトル(様々な波長の光)が含まれており、空の塵はその光を選択的に散乱するからだ</strong>だ。</p>
+					<p>ではなぜ塵は光を選択的に散乱するのか。</p>
+					<h2>ここからしばらくは身体を張ったギャグなのであまり細かいところに突っ込まないでくださいボロが出ます</h2>
+					<p><strong>光は電磁波なので、光によって電場が変動し、空気中の塵は静電誘導によって誘起双極子となる。</strong></p>
+					<p>電場の変化によってこの双極子は振動するので、電場中の調和振動子の運動方程式を考える。</p>
+					$$
+					m_e \biggl( \frac{d^2{\bf x}}{dt^2} + \omega_0 {\bf x} \biggr) = -e{\bf E}_i(t)
+					$$
+					<p>入射波が単色波であり$e{\bf E}_i(t) = {\bf E}_0\rm{e}^i\omega t$とするとき、これを解いて、</p>
+					$$
+					{\bf x} =- \frac{e {\bf E}_0}{m_e(\omega_0^2 - \omega^2)}\rm{e}^{i\omega t}
+					$$
+										
+					<p>ここから生まれる双極子放射が散乱光である。この塵の半径を$a$、誘電率を$\epsilon$とし、$\omega_0 \gg \omega$のとき、散乱波の電場は</p>
+					$$
+					{\bf E}_s({\bf r}, t) = - \frac{\omega^2}{4 \pi \varepsilon_0 c^2 r} \{ {\bf n}\times [{\bf n}\times 4\pi\varepsilon_0\frac{(\varepsilon - \varepsilon_0)a^3}{2\varepsilon + \varepsilon_0}{\bf E_0}]\}\rm{e}^{i\omega (t-r/c)}
+					$$
+					<p>これのポインティングベクトルの時間平均と入射波のポインティングベクトルの時間平均の絶対値の比を用いて散乱強度を導出し、全立体角で積分することで</p>
+					$$
+					\frac{d\sigma}{d\Omega}= \biggl( \frac{e^2}{4\pi \epsilon_0^2 m_e c^2} \biggr)^2 sin^2 \Theta
+					$$
+					$$
+					\sigma = \frac{8\pi}{3} \biggl( \frac{\varepsilon - \varepsilon_0}{2\varepsilon_0 + \varepsilon} \biggr)^2 a^6 \biggl( \frac{\omega}{c} \biggr)^4 \propto \frac{a^6}{\lambda^4}
+					$$
+					<p>が導かれる。つまり、波長の短い光ほど散乱されやすいわけである。</p>
+					<p>太陽が真上にある<strong>日中は、波長の短い青が散乱される</strong>ため空は青いが、<strong>夕方になると太陽が斜めから差すので通過する空気の層が厚く、青い光は早々に散乱されて消えてしまう。むしろ散乱されにくい赤のほうが届いてくるので、赤く見える</strong>わけである。</p>
+					<br>
+					<br>
+					<br>
+					<h2>物理全然わからないのに適当なこと書いてすみませんでしたこの場を借りてお詫び申し上げます</h2>
+					<br>
+					<p><strong>なんてことを書きたかったわけではない。</strong>僕は物理は全然やって来なかったのでレイリー拡散について満足に喋れるはずなどなかったのだ。</p>
+					<p>僕は別に夕方に長波長の光が観測されることの理由を考えたいわけではなく、「夕焼けは赤いのか」ということ、つまり<strong>「赤」とは何か</strong>について考えてみたかったのだ。</p>
+					<h2>物理的赤</h2>
+					<div style="padding: 100px; width:50%; background-color: #ff0000"></div>
+					<p>上の色はCSSで<strong>#FF0000</strong>で指定されている。表示しているディスプレイにも拠るが、<strong>おそらくあなたの目の前に620nm〜640nmくらいの波長の光が飛んでいる</strong>はずである。ちなみにcssでcolor:red;と指定した時の色がこれである。</p>
+					<p>しかし、<strong>それを「赤」と呼んでしまって良いかは自明ではない</strong>。言葉は分節化された概念に対して与える名前であるので、もちろんそれを「赤」と呼ぶことはできる。しかし我々はそれを<strong>本質的に「赤」</strong>と呼んでいいのか。</p>
+					<h2>発生学的赤</h2>
+					<p>人間はこの光をどのように捉えるのであろうか。 人間の視細胞には、暗所で鋭敏に弱光を感知する<strong>桿体細胞</strong>と、明所で色を判別する<strong>三種類の錐体細胞</strong>が存在する。三種類の錐体細胞はそれぞれ特定の波長に反応し、その波長は我々人間の大部分が<strong>「赤」「緑」「青」</strong>と呼ぶ帯域である。 </p>
+					<br>
+					<div align="center">
+						<img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Cone-response-en.png" alt="cone response" title="視細胞" width=90%>
+						<p><a href="https://ja.wikipedia.org/wiki/%E9%8C%90%E4%BD%93%E7%B4%B0%E8%83%9E">&mdash;Wikipedia「錐体細胞」より</a></p>
+					</div>
+					<br>
+					<p>しかし、である。この錐体細胞はどのように作られるかというと、<strong>DNAという設計図に基づいてリボソームがたんぱく質をセコセコ作る</strong>わけである。その設計図は、性染色体であるX染色体上に存在している。性染色体は男性はXとY、女性はXとXを持っており、子供には両親から1種類ずつ渡る。母親はどちらを渡してもXなので、<strong>父親がXを渡すかYを渡すかの$\frac{1}{2}$の格率で子供の男女が決定する</strong>のである。</p>
+					<h2>遺伝学的赤</h2>
+					<p>ここで、<strong>錐体細胞の設計図にミスがあったとしよう</strong>。女性の場合は2種類存在するのでどちらかが壊れていても大丈夫だが、男性は1種類しかないのでそれが壊れていると正常な錐体細胞ができず、<strong>例えば「赤」錐体が壊れていた場合、いわゆる「赤」が黒くなってしまうので、先ほどの画像は以下のように見える</strong>(1型2色覚)。所謂「<strong>赤緑色覚異常</strong>」である。</p>
+					<div align="center">
+						<img src="img/dusk_red_blind.png" alt="dusk for protanopia" title="1型2色覚にとっての夕焼け" width=90%>
+					</div>
+					<p>このような色覚異常は<strong>日本人男性の5%程度</strong>いると言われている。単純計算で女性は$0.05^2=0.0025=0.25\%$ということになる(0.2%らしい)。1型2色覚はそれのさらに9%ほどらしいが、いずれにせよ<strong>20人に一人は、「画像が網膜に映った段階で違う"色"に見えている」</strong>と言えるだろう。これを同じ「赤」であると言って良いのだろうか。</p>
+					<h2>クオリアとしての「赤」</h2>
+					<p>もっと言えば、<strong>網膜に同じ映像を当て、同じ電気信号が生まれたとしても、脳内に同じイメージが浮かんでいるかはわからない</strong>。そのイメージは、「<strong>クオリア</strong>」と呼ばれる。</p>
+					<p>クオリアはとは何かについては様々な議論がある。
+					<p>それが<strong>もし「完全に心的な」ものであれば、外界から観測できないのでそのクオリアに対して何も語ることができない。もし「赤のクオリア」を記述できたなら、それはすなわちクオリアを物理現象に帰着できてしまうからである。何も語ることができない、認識できないものは存在していると言っていいのであろうか。</strong>その情報に価値はあるのだろうか。</p>
+					<p>対して、<strong>「物理現象に帰着できる」とすると、「<a href="https://ja.wikipedia.org/wiki/%E3%83%A1%E3%82%A2%E3%83%AA%E3%83%BC%E3%81%AE%E9%83%A8%E5%B1%8B">メアリーの部屋</a>」のような気持ち悪さが残る。また、「<a href="https://ja.wikipedia.org/wiki/%E5%93%B2%E5%AD%A6%E7%9A%84%E3%82%BE%E3%83%B3%E3%83%93">哲学的ゾンビ</a>」の思考実験に際して、人間と哲学的ゾンビは全く差がないということになり、この世の中には「意識」や「経験」のような「心的なもの」は全く存在しない、という結論になる。</strong>そのように結論付けることに意味はあるのだろうか。</p>
+					<p>クオリアに関する議論が我々に突き付けるのは、<strong>「心的な=mentalなもの」への姿勢と「物理的なもの=physicalなもの」への姿勢とがダブルスタンダードになっている</strong>現状である。</p>
+					<h2>現代科学と現代哲学</h2>
+					<p><strong>現代科学はどこまでも、客観的に、絶対的に世界を記述しようとしてきた</strong>。日が沈むころに構築される自然環境をモデル化し、それによって発生する光の特性を分析し、それが網膜にあたった時に反応する細胞の種類や、その時に発生する脳波まで、厳密に記述しようとしてきた。<strong>全ては「この世の摂理」に近づくためであった。</strong></p>
+					<p>対して<strong>現代哲学はどこまでも認識にフォーカスしてきた</strong>。カントの「対象は認識に従う」という"コペルニクス的転回"以降、<strong>主観的に、相対的に世界を捉えようとしてきた</strong>のである。<strong>我々が認識できるのは「現象&mdash;Erscheinung&mdash;」のみであり、「物自体&mdash;Ding an sich&mdash;」は思惟される対象でしかなく、如何様にも知覚されないがゆえに存在してもしなくても変わらないものであった。</strong></p>
+					<br>
+					<p>科学と哲学が真逆の方向に進んできた中で、その間に取りこぼされたものはないのであろうか。"私"の存在しない世界で、夕焼けは赤いのだろうか。</p>
+				</div>
+			</div>
+		</div>
+	</div><!-- /.container -->
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6 col-sm-4">
+				<a class="btn btn-social btn-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://musicshio.github.io/sites/advent2017/day6.html" role="button"><i class="fa fa-facebook left"></i> Facebook</a>
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<a class="btn btn-social btn-tw" href="http://twitter.com/share?url=https://musicshio.github.io/sites/advent2017/day6.html&text=夕焼けは赤いのか+-+Advent+Calendar+2017" role="button"><i class="fa fa-twitter left"></i> Twitter</a>
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<a class="btn btn-social btn-gplus" href="https://plusone.google.com/_/+1/confirm?hl=ja&url=https://musicshio.github.io/sites/advent2017/day6.html" role="button"><i class="fa fa-google-plus left"></i> Google +</a>
+			</div>
+		</div>
+	</div>
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>

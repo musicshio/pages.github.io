@@ -1,0 +1,12 @@
+
+
+					\bf{E}_s(\bf{r}, t) = - \frac{\omega^2}{4 \pi \epsilon_0 c^2 r} \{ \bf{n}\times [\bf{n}\times (- \frac{e^2\bf{E}_0}{m_e \omega^2})]\rm{e}^{i\omega (t-r/c)}
+					$$
+					<p>これのポインティングベクトルの時間平均と入射波のポインティングベクトルの時間平均の絶対値の比を用いて、</p>
+					$$
+					\frac{d\sigma}{d\Omega}= \biggl( \frac{e^2}{4\pi \epsilon_0^2 m_e c^2} \biggr)^2 sin^2 \Theta
+					$$
+					<p>これを全立体角で積分して、</p>
+					$$
+					\sigma = \frac{e^4}{6\pi\epsilon_0^4 m_e^2 c^4}
+					$$
