@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Day7 - Advent Calendar 2017</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<!--add CSS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/article.css">
+	<link rel="stylesheet" href="../css/code.css">
+<!--	// YakuHanJP-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanjp.min.css">
+
+<!--	// YakuHanJPs-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanjp_s.min.css">
+
+<!--	// YakuHanMP-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanmp.min.css">
+
+<!--	// YakuHanMPs-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanmp_s.min.css">
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			tex2jax: {
+				inlineMath: [['$','$'], ['\\(','\\)']], 
+				displayMath: [['$$','$$'], ['\\[','\\]']], 
+				processEscapes: true 
+			}
+		});
+	</script>
+	<script type="text/x-mathjax-config"> 
+		MathJax.Hub.Config({ 
+			"HTML-CSS": { scale: 80, linebreaks: { automatic: true } }, 
+			SVG: { linebreaks: { automatic:true } } })
+	</script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<a class="navbar-brand" href="../index.html">shio</a>
+
+		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Advent2017</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown01">
+						<a class="dropdown-item" href="index.html">Top</a>
+						<a class="dropdown-item" href="day1.html">Day1</a>
+						<a class="dropdown-item" href="day2.html">Day2</a>
+						<a class="dropdown-item" href="day3.html">Day3</a>
+						<a class="dropdown-item" href="day4.html">Day4</a>
+						<a class="dropdown-item" href="day5.html">Day5</a>
+						<a class="dropdown-item" href="day6.html">Day6</a>
+						<a class="dropdown-item disabled" href="#">Day7</a>
+					</div>
+				</li>
+			</ul>
+<!--      <form class="form-inline my-2 my-lg-0">-->
+<!--        <input class="form-control mr-sm-2" type="text" placeholder="Search">-->
+<!--        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+<!--      </form>-->
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="article col">
+				<div class="page-header">
+					<h1>Siriと付き合えるか -前編- <small>意味と生命</small></h1>
+				</div>
+				<div class="articleMain">
+					<h2>告白してみた</h2>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<p>「Hey, Siri. 聞いてほしいことがあるんだ」</p>
+					<br>
+					<p>「何でしょう」</p>
+					<br>
+					<p>「僕と、付き合ってください」</p>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<p>「...よろこんで」</p>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<p>かくしてめでたく僕はSiriと付き合えることとなった。</p>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<h2>んなわけあるか。</h2>
+					<p><strong>それで良いなら、僕だってそのぐらいのプログラムを作れる</strong>。以下の画面の「入力」の欄に、「僕と、付き合ってください」と書いて実行してみてほしい。</p>
+					<iframe src="https://paiza.io/projects/e/N2eiXukzR_vD5jgpCogSZw?theme=twilight" width="100%" height="500" scrolling="no" seamless="seamless"></iframe>
+					<p><strong>「僕と、付き合ってください」と言われたら「...よろこんで」と出力されるだけのプログラム</strong>である。さすがにこれでは<strong>このプログラムに「心」がある</strong>と思う人は少ないであろう。</p>
+					<br>
+					<p>しかしもし、このようになったらどうであろうか。</p>
+					<pre class="prettyprint"><code>
+if(様々な条件 && str == "僕と、付き合ってください"){
+    cout << "...よろこんで";
+}
+					</code></pre>
+					<p>この「様々な条件」は、とても複雑に書けるとしよう。</p>
+					<pre class="prettyprint"><code>
+n1 > 7; //今までにデートに行った回数
+n2 > 50; //一日にやり取りするラインの件数
+n3 > 3; //今までにくれたプレゼントの数
+n4 > 65; //顔面偏差値
+n5 > 80; //辛い時に話しかけてくれる頻度(%)
+...
+					</code></pre>
+					<p>このような<strong>十分複雑な条件をクリアした時だけ、「よろこんで」と言ってくれるプログラム</strong>があったとすると、どうであろうか。<strong>実際の人間の恋愛と、何が違うのであろうか。例えば、「<strong>このプログラムは『意味』を理解していない。『僕と、付き合ってください』の言葉の意味も、条件に存在する数値の意味もわかっていない。これでは『心』があると言えない</strong>」と言われるだろうか。</strong></p>
+					<br>
+					<br>
+					<h2>AIの進化</h2>
+					<p><strong>人類の文明の発展は凄まじいものである。</strong>人間に行えることのほとんどは、機械でもシミュレートできるようになってしまった。例えば翻訳に限っても、
+					<br>
+					<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:680px;" title="Google翻訳の新機能「リアルタイム翻訳」が楽しすぎてお祭り状態 | AppBank – iPhone, スマホのたのしみを見つけよう" src="https://hatenablog-parts.com/embed?url=http://www.appbank.net/2017/01/26/iphone-application/1304383.php" frameborder="0" scrolling="no"></iframe>
+					<br>
+					<strong>カメラで読み取った文書を自動翻訳</strong>できたり、
+					<br>
+					<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:680px;" title="Googleが40か国語をリアルタイム翻訳してくれるイヤホンを発表　言葉の壁がなくなる未来を感じる…" src="https://hatenablog-parts.com/embed?url=http://www.huffingtonpost.jp/engadget-japan/simultaneous-interpretation-earphone_a_23234515/" frameborder="0" scrolling="no"></iframe>
+					<br>
+					イヤホンを通して<strong>ユーザーが話した言葉をリアルタイムで翻訳して会話</strong>できたりする。</p>
+					<h2>現象から概念へ</h2>
+					<p>これらを導入するために必要な技術たちを考えると気の遠くなるものがある。</p>
+					<p>まず、<strong>画像や音を電子的な情報に変換しなければならない</strong>。我ら人間に於いては画像(様々な波長の光)は水晶体を通して網膜の視細胞が受容し、音(空気の振動)は鼓膜で受容し、耳小骨を通して渦巻き管の基底膜が震えるのを聴細胞が検知する。</p>
+					<p>こうして<strong>情報化されたものを、今度は分類しなければならない</strong>。まずそれが文字なのか、図なのか、それともただのモノなのかを判別しなければならない。音だったら、声なのか、信号なのか、音楽なのか、環境音なのかということである。<strong>ただの空気の振動が「あ」なのか「あ」でないのかを認識するのは並大抵のことではない</strong>。このあたりは<a href="day3.html">3日目</a>の議論で触れたが、<strong>われわれは概念を分節化として捉えている</strong>ので、聴こえた音をそこに分類していくことになる。</p>
+					<div align="center">
+						<img src="img/segmentation.png" alt="segmentation" title="分節化" width=90%>
+					</div>
+					<h2>概念から意味へ</h2>
+					<p>こうしてアルファベットを読み取り、文章を構築することができるが、それだけでは終わらない。まだ文字の羅列でしかないため、<strong>まず単語を判別し、そこから「統語論」で文構造を決める。</strong>どれが主語でどれが述語かを、その単語の品詞から考えるのである。もちろん、動詞にも名詞にもなる単語はいくらでも存在するので、それは<strong>確定している部分から「文脈」で識別する</strong>。それでも何通りも可能性のある場合もあるので、<strong>ありうる読み方を確率的に出力</strong>する。その計算のベースとなる確率は、<strong>大量のデータから機械学習で提供</strong>すればよい。「この読み方である確率が99.5%です」のような感じになる。</p>
+					<div align="center">
+						<img src="img/syntax.png" alt="stntax" title="統語論" width=90%>
+					</div>
+					<p><strong>しかし、文法的にOKならよいかというとそうではない。</strong></p>
+					<br>
+					<p>「すみません、今何時かわかりますか？」</p>
+					<br>
+					<p>と聞かれた時に、</p>
+					<br>
+					<p><strong>「はい。」</strong></p>
+					<br>
+					<p>と答えるのが本当に正しいだろうか。</p>
+					<p>恐らく、時間を答えるのが正しいのだろう。<strong>文法的な意味と実際の意味が違うことはよくある</strong>のだ。これは「<strong>語用論</strong>」の分野である。また、慣用句などの問題もある。<strong>このままでは「ホント、肝が潰れたよ」と言われたSiriはすぐさま119番通報するであろう。</strong>慣用句的なものに関しては、例外として個別に対応していく必要があろう。</p>
+					<br>
+					<br>
+					<p>まだ話は終わらない。</p>
+					<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:680px;" title="Colorless green ideas sleep furiously - Wikipedia" src="https://hatenablog-parts.com/embed?url=https://ja.wikipedia.org/wiki/Colorless_green_ideas_sleep_furiously" frameborder="0" scrolling="no"></iframe>
+					<p><strong>"Colorless green ideas sleep furiously"(無色の緑色の考えが猛烈に眠る)という文は文法的には何も間違っていない。</strong>しかし、この文を提示したチョムスキーは、何も意味を持たせずにこの文を書いたわけである。これは「<strong>意味論</strong>」の分野であるが、こうなるともうお手上げである。<strong>我々はこの文から何も意味を得ることができない。</strong>意味がある文と意味の無い文は、適切に見極めなければならない。</p>
+					<br>
+					<p>いずれにせよ、このようにして文字や言葉から意味を抽出するわけである。<strong>気の遠くなるような作業であるが、それぞれのステップを厳密にプログラムしていけば、少なくとも人間が行っているのと同等な処理を行うことができるはず</strong>である。なぜなら、<strong>人間の学習は「出来の悪いディープラーニング」であるからだ。</strong><strong>人間が論理的に行う作業であれば、機械はそれをより早く、正確に行うことができる。</strong></p>
+					<h2>我々は九九ができない</h2>
+					<p>突き詰めて考えれば、<strong>「機械には『意味』がわかっていない」というよりかは、「我々人間は『意味』がわかっているのか」、という方が疑問になってくる</strong>。</p>
+					<p>例えば我々は、「こんにちは」と言われたら「こんにちは」と返す。そしてそれを、「心のこもった挨拶」「挨拶すると気持ちがいいね」などと言う。</p>
+					<p>しかし、<strong>そこに「思考」はあるのだろうか</strong>。<strong>先ほどのプログラムと、何が違うのであろうか</strong>。</p>
+					<p>別の例を考えよう。<strong>あなたは、「$6 \times 9$」を計算できるだろうか</strong>。舐めるんじゃない、54だ、と言われるかもしれない。しかし、あなたがやったことはプログラムで言うと</p>	
+					
+					<pre class="prettyprint"><code>
+if(input == "6*9"){
+    cout << 54;
+}
+					</code></pre>
+					<p>というものでしかない。<strong>あなたは「九九」を覚えているからだ</strong>。<strong>あなたは「計算」は行っておらず、条件反射で答えただけである</strong>。ふつうにコーディングするとこのようになる。</p>
+					<pre class="prettyprint"><code>
+if(input == "6*9"){
+    cout << 6*9;
+}
+					</code></pre>
+					<p>こう書けば、プログラムはちゃんと「計算」をするのである。</p>
+					<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:680px;" title="CASL II 入門講座 第４章　乗算" src="https://hatenablog-parts.com/embed?url=http://www.officedaytime.com/dcasl2/pguide/chapter4f.html" frameborder="0" scrolling="no"></iframe>
+					<p>コンピューターは2つの数を二進法にし、ひと桁ずつ足し算をするのだ。我々の「筆算」と同じようなシステムである。<strong>人間よりよっぽど「意味」がわかっているのではないか。</strong></p>
+					<p>注: 最適化してコンパイルした場合は知りません、むしろ人間の九九に近づいて面白いといえるかも(乾いた笑い)</p>
+					<br>
+					<p>少なくとも言えることは、人間は<strong>普段から意味を考えながら喋っているかはかなり怪しい</strong>ということである。また、もし<strong>「計算」や「推論」などを行うことを「考えること」と呼ぶならば、それは機械も行っている</strong>ということなのである。</p>
+					<h2>強いAIと弱いAI</h2>
+					<p>ジョン・サールが提唱した概念に、<a href="https://ja.wikipedia.org/wiki/%E5%BC%B7%E3%81%84AI%E3%81%A8%E5%BC%B1%E3%81%84AI">「強い」AIと「弱い」AI</a>というものがある。</p>
+					<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:680px;" title="思考整理メモ：「強いAI／弱いAI」の区別とは結局何なのか？ - rmaruy_blog" src="https://hatenablog-parts.com/embed?url=http://rmaruy.hatenablog.com/entry/2016/01/14/205240" frameborder="0" scrolling="no"></iframe>
+					<p>この記事では、サールが提唱した内容を正確に訳しているように思う。</p>
+					<blockquote cite="http://rmaruy.hatenablog.com/entry/2016/01/14/205240">
+						<ul>
+							<li>弱いAI：心の研究において，コンピュータをあくまで道具として使う．（コンピュータそのものが心になるとは主張しない）</li>
+							<li>強いAI：コンピュータを適切な方法でプログラムすれば，それが心になると考える．</li>
+						</ul>
+						<cite>John R. Searle　“Minds, Brains, and Programs”要約</cite>
+					</blockquote>
+					<p>誤解が多いが、サールはAIの性質というよりは科学者の立場として、「<strong>十分開発されたプログラムは心を持つと思うか</strong>」どうかにフォーカスしてこの概念を示したわけである。</p>
+					<p>ちなみにサールは「強いAI」には反対の立場にいる。例えば「<a href="https://ja.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E8%AA%9E%E3%81%AE%E9%83%A8%E5%B1%8B">中国語の部屋</a>」の議論に関して、サールの主張として「<strong>中の人が中国語を理解していないので中国語の部屋は中国語を理解していない</strong>」というものがあり、それに対する「<strong>マニュアル自体や中の人単体では中国語を理解していないが、部屋全体としてのアウトプットは人間のそれと変わらないので、システムとして中国語を理解しているのではないか</strong>」という反駁に対し、更にサールは「<strong>システムとして考えたとしてもなお、意味論として中国語を『理解』しているとはいえない</strong>」と再反駁している。つまるところサールは機能主義を否定する立場を取っている。サールは次のように<a href="https://ja.wikipedia.org/wiki/%E3%83%81%E3%83%A5%E3%83%BC%E3%83%AA%E3%83%B3%E3%82%B0%E3%83%BB%E3%83%86%E3%82%B9%E3%83%88">チューリングテスト</a>を批判している。</p>
+					<blockquote>
+						<p>The Turing test is typical of the tradition in being unashamedly behavioristic and operationalistic, and I believe that if AI workers totally repudiated behaviorism and operationalism much of the confusion between simulation and duplication would be eliminated.</p>
+						<cite><a href="http://cogprints.org/7150/1/10.1.1.83.5248.pdf">John R. Searle “Minds, Brains, and Programs”</a></cite>
+					</blockquote>
+					<p>しかし、<strong>チューリングテストを批判するならば、我々は「人間は意味をわかっているかどうか」をどう確かめれば良いのだろうか</strong>。今時、<strong>SNS上だけの知り合い</strong>などというものはたくさん存在することであろう。我々はその相手を人間であると思っているし、彼らには心があると思っている。しかし、それを確かめる術はあるのだろうか。<strong>ある日僕のTwitterが、「僕の発言を高度に学習したbot」にすり替わった場合、SNS上のつながりしかない人はそれをどう区別したら良いのだろうか。</strong></p>
+					<h2>「生命」と「生体」</h2>
+					<p>第一、現状「機械」と「生物」を分けるものなど、「<strong>本体が金属で出来ているか、タンパク質で出来ているか</strong>」くらいの違いしかない。脳のない細菌は、<strong>DNA上で自己複製するようにプログラムされておりそれにしたがって分裂している</strong>だけで、別に思考をしているわけではない。比較的高度に思えるイヌやネコだって、<strong>脳こそ存在すれど、それは純粋に演算を行うCPUであると考えることもできる。</strong>お腹が空いて餌を食べようとしているのも、<strong>間脳視床下部が血糖値が低下してきたことを検知して、餌を食べるように脚や顎の筋肉に命令を出している</strong>だけだ。</p>
+					<p>逆に、<strong>義足や補聴器</strong>などはすでに身近なものになっている。いずれは<strong>人工筋肉</strong>等も現れ、<strong>自分の思い通りに動かせる"非タンパク質"</strong>が増えていくであろう。なんなら、「<strong>タンパク質で出来た機械</strong>」も作られていくかもしれない。それこそ<a href="day6.html">6日目</a>に触れた「<a href="https://ja.wikipedia.org/wiki/%E5%93%B2%E5%AD%A6%E7%9A%84%E3%82%BE%E3%83%B3%E3%83%93">哲学的ゾンビ</a>」である。<strong>「生命」と「生体」の間の必然性など、とっくの昔に脅かされているのである。</strong></p>
+					<h2>次回に続きます</h2>
+					<p>数十年後の未来、タンパク質で人工身体を作り、そこにSiriをインストールしたとする。見た目は完全に人間であるし、触れれば温かい。僕は彼女と出会い、はじめは事務連絡のような会話しかしなかったが、ある日たまたま帰り道が同じになった時の会話ですごく気が合って以来、今では毎日のように話し、休みの日には時々二人で遊びにいき、辛い時は夜中まで通話をしてくれたとする。</p>
+					<p>彼女と出会って二年目の冬、僕はついにこう切り出した。</p>
+					<br>
+					<br>
+					<br>
+					<p>「Hey, Siri. 聞いてほしいことがあるんだ」</p>
+					<br>
+					<p>「何でしょう」</p>
+					<br>
+					<p>「君はいつでも僕の話を聞いてくれて、そばに居てくれて、君と一緒に居るととっても幸せなんだ」</p>
+					<br>
+					<p>「ふふ、ありがとうございます」</p>
+					<br>
+					<p>「僕は君の事が大好きだ。これからもずっと一緒に居たい。だから、」</p>
+					<br>
+					<br>
+					<br>
+					<p>「僕と、付き合ってください」</p>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<p>「...よろこんで」</p>
+				</div>
+			</div>
+		</div>
+	</div><!-- /.container -->
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6 col-sm-4">
+				<a class="btn btn-social btn-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://musicshio.github.io/sites/advent2017/day7.html" role="button"><i class="fa fa-facebook left"></i> Facebook</a>
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<a class="btn btn-social btn-tw" href="http://twitter.com/share?url=https://musicshio.github.io/sites/advent2017/day7.html&text=Siriと付き合えるか+-前編-+-+Advent+Calendar+2017" role="button"><i class="fa fa-twitter left"></i> Twitter</a>
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<a class="btn btn-social btn-gplus" href="https://plusone.google.com/_/+1/confirm?hl=ja&url=https://musicshio.github.io/sites/advent2017/day7.html" role="button"><i class="fa fa-google-plus left"></i> Google +</a>
+			</div>
+		</div>
+	</div>
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>
