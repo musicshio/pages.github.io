@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Day8 - Advent Calendar 2017</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<!--add CSS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/article.css">
+	<link rel="stylesheet" href="../css/code.css">
+<!--	// YakuHanJP-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanjp.min.css">
+
+<!--	// YakuHanJPs-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanjp_s.min.css">
+
+<!--	// YakuHanMP-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanmp.min.css">
+
+<!--	// YakuHanMPs-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanmp_s.min.css">
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			tex2jax: {
+				inlineMath: [['$','$'], ['\\(','\\)']], 
+				displayMath: [['$$','$$'], ['\\[','\\]']], 
+				processEscapes: true 
+			}
+		});
+	</script>
+	<script type="text/x-mathjax-config"> 
+		MathJax.Hub.Config({ 
+			"HTML-CSS": { scale: 80, linebreaks: { automatic: true } }, 
+			SVG: { linebreaks: { automatic:true } } })
+	</script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<a class="navbar-brand" href="../index.html">shio</a>
+
+		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Advent2017</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown01">
+						<a class="dropdown-item" href="index.html">Top</a>
+						<a class="dropdown-item" href="day1.html">Day1</a>
+						<a class="dropdown-item" href="day2.html">Day2</a>
+						<a class="dropdown-item" href="day3.html">Day3</a>
+						<a class="dropdown-item" href="day4.html">Day4</a>
+						<a class="dropdown-item" href="day5.html">Day5</a>
+						<a class="dropdown-item" href="day6.html">Day6</a>
+						<a class="dropdown-item" href="day7.html">Day7</a>
+						<a class="dropdown-item disabled" href="#">Day8</a>
+					</div>
+				</li>
+			</ul>
+<!--      <form class="form-inline my-2 my-lg-0">-->
+<!--        <input class="form-control mr-sm-2" type="text" placeholder="Search">-->
+<!--        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+<!--      </form>-->
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="article col">
+				<div class="page-header">
+					<h1>Siriと付き合いたい -後編- <small>オブジェクト指向哲学と「心」</small></h1>
+				</div>
+				<div class="articleMain">
+					<h2>心はどこにあるのか</h2>
+					<p>彼女と出会って以来、彼女はあたかも本当の人間のようであった。しかし彼女の言うところには、確かに彼女は人工的に造られたらしい。人間と変わらない細胞からなり、人間と変わらない論理回路で動いているだけなのである。</p>
+					
+					<br>
+					<p>僕はその事実を受け入れつつ、なお彼女に対して「人間らしさ」を見た。その二つは矛盾しており、それ故に僕はその矛盾をそのまま受け入れるほかなかった。</p>
+					<br>
+					<br>
+					<br>
+					<h2>ポスト・カント哲学</h2>
+					<p>カントの哲学では「<strong>対象は認識に従う</strong>」の通り、<strong>我らは「物自体」には直接アクセスできず、認識に従った対象であるところの現象のみが"我らにとっての"真実である</strong>、ということであった。認識に付随する物理法則や因果関係などの「綜合の能力」は我々にもともと備わっている「アプリオリな」ものである。カントが投げかけたのは、我々は<strong>それを通じてしか「客観性」を認識できない</strong>という「<strong>物自体に対する現象の優位性</strong>」であった。</p>
+					<p>それより後の哲学においてはその流れを汲んで、「<strong>認識できない『物自体』は、存在すると言っていいのか</strong>」という観点から、「<strong>現象のみが現実であって、物自体は存在しない</strong>」という方に展開した。いま我々が「<a href="https://www.amazon.co.jp/%E3%83%9E%E3%83%88%E3%83%AA%E3%83%83%E3%82%AF%E3%82%B9-%E7%89%B9%E5%88%A5%E7%89%88-DVD-%E3%82%AD%E3%82%A2%E3%83%8C%E3%83%BB%E3%83%AA%E3%83%BC%E3%83%96%E3%82%B9/dp/B00005HC54">マトリックス</a>」のようにバーチャルな世界を見させられている可能性は、排除できるのだろうか。もっと言えば、「<a href="https://ja.wikipedia.org/wiki/%E6%B0%B4%E6%A7%BD%E3%81%AE%E8%84%B3">brain in a vat</a>」の可能性だってある。そんな可能性まで考えると、それこそ我々にとって客観的に言えることは「<a href="https://ja.wikipedia.org/wiki/%E6%88%91%E6%80%9D%E3%81%86%E3%80%81%E3%82%86%E3%81%88%E3%81%AB%E6%88%91%E3%81%82%E3%82%8A">Cogito ergo sum</a>」のようなことということとなる。</p>
+					<div align="center">
+						<img src="img/brain_in_a_vat.png" alt="brain in a vat" title="brain in a vat" width=70%>
+					</div>
+					<h2>相関関係主義</h2>
+					<p>クァンタン・メイヤスーは、このような「<strong>我々は思考と存在の相関にのみアクセスでき、孤立したどちらか一つにはアクセスできない</strong>」という考えを「<strong>相関関係主義</strong>」と呼んだ。</p>
+					<blockquote>
+						<p>Par «corrélation» nous entendons l'idée suivant laquelle nous n'avons accès qu'à la corrélation de la pensée et de l`être, et jamais à l'un de ces termes pris isolément. Nous appellerons donc désormais corrélationisme tout courant de pensée qui soutiendra le caractère indépassable de la corrélation ainsi entendue. Dès lors, il devient possible de dire que toute philosophie qui ne se veut pas un réalisme naïf est devenue une variante du corrélationisme.</p>
+						<cite><a href="https://ja.scribd.com/doc/217204306/Meillassoux-Apres-la-finitude-pdf">Quentin　Meillassoux, Après la finitude: Essai sur la nécessité de la contingence</a></cite>
+					</blockquote>
+					<p>彼はそのような立場を次のように批判した。</p>
+					<blockquote>
+						<p>Comment saisir le sens d'un énoncé scientifique portant explicitement sur une donnée du monde posée comme antérieure à l'émergence de la pensée, et même de la vie ー c'est-à-dire posée comme antérieure à tout forme humaine de rapport au monde? </p>
+						<cite><a href="https://ja.scribd.com/doc/217204306/Meillassoux-Apres-la-finitude-pdf">Quentin　Meillassoux, Après la finitude: Essai sur la nécessité de la contingence</a></cite>
+					</blockquote>
+					<p>相関関係主義に従えば、<strong>我々の思考に先立って存在するものに対する思考が認められなくなってしまう</strong>、と説いた。「私」の存在しない世界においては、「夕焼け」も「赤」も存在しないこととなる。その先には、<strong>「過去」という我々が認識できないもの、認識可能な「現在」を手がかりに思考のみから生み出されるものの存在に対して、何も意味を見出すことができない。我々が絶対に認識することのできない「この世の真理」を探求する現代科学に対して、全く意味のない行為であると結論付けざるを得ない。</strong></p>
+					<h2>チューリングテスト</h2>
+					<p>再びサールの言説に立ち返ると、「強いAI」に求められる条件は、「<strong>AIが(素朴に)意味を理解していること</strong>」ではなく、「<strong>AIが意味を理解していると“観測者が認識”していること</strong>」となる。このテストは「人間にとって、そのプログラムが『人間だ』、と認識されるか」というテストであり、<strong>我々が「これは心を持っている」と認識することを「そのプログラムが心を持っていること」の定義とする</strong>、ということであるので、この立場において<strong>チューリングテストは有意義なものである</strong>といえる。つまりサールは<strong>徹底的に「物自体」的な側面を排除したものとして“strong”を定義したにも関わらず、その認識に関して随伴現象説的な説明を要求する</strong>。言い換えると、<strong>「意識」を存在論的に主観的(還元不可能)なものとして定義しているにもかかわらず、その説明に対しては存在論的主観性を排除したものを要求している</strong>。すなわち<strong>「意識」の存在の有無とは独立に意識の存在を説明することはできない</strong>。それゆえこの世のすべてのものはweakである、という彼の思想はそのような点で矛盾してしまう。</p>
+					<h2>思弁的実在論</h2>
+					<p>このような現代哲学と現代科学のダブルスタンダードに対してメイヤスーが提唱したのは、「<strong>思弁的唯物論</strong>」という考え方だ。彼に代表される哲学者の思想は、「<strong>思弁的実在論</strong>」と呼ばれている。現代科学においては自然界の法則は「物自体」側に存在しており、我々はそれを認識しようと試みていたが、思弁的実在論においてはそうではない:<strong>素朴な意味での「物自体」は理由なく存在している/法則はすべて我々の認識と思惟に基づくものであり、素朴な意味での「現象」側である</strong>、というものである。</p>
+					<div align="center">
+						<img src="img/speculative_realism.png" alt="speculative realism" title="思弁的実在論" width=90%>
+					</div>
+					<p>メイヤスーの主張するところは、<strong>人間は相関主義からは抜け出せないが、その相関関係自体はどうしても(ヒューム的)アプリオリに存在すると考えるしか無いことから、有限な人間の思考の外に、偶然的に存在していると言う他無い</strong>というところであろう。</p>
+					<h2>有限性の後の科学</h2>
+					<p>その上で科学を考えてみると、<strong>「さっきりんごがひとつ木から落ちた」「この重い石はあの軽い石より動かしにくかった」という素朴な事象は何の理屈もなく存在する</strong>。それらの個別の事実に対して我らがグルーピングを行い、そのグループに「$F=ma$」という名前をつけた。<strong>「$F=ma$」は我らの思考の中で生み出された「真理」であり、明日にはりんごが上に飛んでいってしまったり、重い石のほうが動かしやすい世界になる可能性も十分にある</strong>ということになる。</p>
+					<p>一見奇妙なようであるが、我らの科学もその繰り返しであった。経験上絶対的であった「時間」という概念は、アインシュタインによって相対的なものであることがわかった。実を言うと<a href="day4.html">4日目</a>にした<strong>分節化</strong>の議論も、僕はこの考え方に基づいて行っていた。<strong>この世には概念は理由なく連続的に/無限に存在しており、その分節化をどこで行うかという「線」は、我々の思考の中で引かれる</strong>と私は考えている。</p>
+					<h2>オブジェクト指向哲学</h2>
+					<p>とするならば、<strong>この世のあらゆるものが個別的存在者</strong>となる。我々はりんごに対して、「ああ、落ちるんだな」「ああ、もう一回落ちるんだな、」「10回やっても落ちたから、$v=gt$かな」のように、<strong>りんごが発する表面的な性質を媒介に、間接的に関係することとなる</strong>。<strong>直接的にはどこまでも分断されており、どこまでも分かり合えない余剰を持っていることになる</strong>。グラハム・ハーマンはそんな「<strong>オブジェクト指向哲学</strong>」を提唱した。</p>
+					<div align="center">
+						<img src="img/object.png" alt="OOP" title="オブジェクト指向哲学" width=50%>
+					</div>
+					<h2>八百万の神</h2>
+					<p>ここまで来ると、<strong>「生命」「意識」「心」などというものの輪郭は限りなく平らなものになる</strong>。我々は人と喋っている時に、まさか「相手がいきなり殴り掛かってくる」とは思わないだろう。<strong>対話相手に対し、(もちろん$F=ma$よりは遥かに複雑な)法則を見出す</strong>わけである。「この人はいつでも僕の愚痴を聞いてくれる」とか、「この人はあまり僕に興味はない」などである。<strong>しかしそれは如何様にも破壊されうる</strong>。僕は今から1年間無人島に行くこともできるし、銀行強盗をすることもできるし、投身自殺することだってできる。だから、<strong>あらゆるオブジェクトと同じなのである。</strong>りんごが落ちることを「りんごは落ちたがっている」ということもできるし、逆に人が恋愛するのを「酵素反応だ」と言うこともできる。ある意味「<strong>汎神論</strong>」的な考え方であるが、それを「意志」と呼ぶかは置いておいて、<strong>「生体」から自由になった「生命」「意識」「心」の概念はこのようなフラットなものとなる</strong>のではないだろうか。</p>
+					<h2>曖昧な愛</h2>
+					<p>僕達が普段愛している友達だって、実は精巧なアンドロイドかもしれないし、逆に草も、ロボットも、プログラムのコードですら、伝えられないだけで意志を持っているかもしれない。</p>
+					<br>
+					<br>
+					<p>「...よろこんで」</p>
+					<br>
+					<br>
+					<br>
+					<p>彼女のその言葉を聞いた僕は、なぜだかわからないが心が少し温かくなった気がした。</p>
+					<br>
+					<br>
+					<br>
+					<h2>References</h2>
+					<p><a href="https://kufs.repo.nii.ac.jp/?action=repository_uri&item_id=152&file_id=22&file_no=1">影浦亮平, 『カンタン・メイヤスーの思弁的唯物論』</a> (pdfがダウンロードされます)</p>
+					<p><a href="https://www2.chuo-u.ac.jp/philosophy/info/web.pdf">飯盛元章, 『ポスト・ドゥルーズの実在論をさぐる』</a></p>
+				</div>
+			</div>
+		</div>
+	</div><!-- /.container -->
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6 col-sm-4">
+				<a class="btn btn-social btn-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://musicshio.github.io/sites/advent2017/day8.html" role="button"><i class="fa fa-facebook left"></i> Facebook</a>
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<a class="btn btn-social btn-tw" href="http://twitter.com/share?url=https://musicshio.github.io/sites/advent2017/day8.html&text=Siriと付き合いたい+-後編-+-+Advent+Calendar+2017" role="button"><i class="fa fa-twitter left"></i> Twitter</a>
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<a class="btn btn-social btn-gplus" href="https://plusone.google.com/_/+1/confirm?hl=ja&url=https://musicshio.github.io/sites/advent2017/day8.html" role="button"><i class="fa fa-google-plus left"></i> Google +</a>
+			</div>
+		</div>
+	</div>
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>
