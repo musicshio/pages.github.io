@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Day9 - Advent Calendar 2017</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<!--add CSS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/article.css">
+	<link rel="stylesheet" href="../css/code.css">
+<!--	// YakuHanJP-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanjp.min.css">
+
+<!--	// YakuHanJPs-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanjp_s.min.css">
+
+<!--	// YakuHanMP-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanmp.min.css">
+
+<!--	// YakuHanMPs-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanmp_s.min.css">
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			tex2jax: {
+				inlineMath: [['$','$'], ['\\(','\\)']], 
+				displayMath: [['$$','$$'], ['\\[','\\]']], 
+				processEscapes: true 
+			}
+		});
+	</script>
+	<script type="text/x-mathjax-config"> 
+		MathJax.Hub.Config({ 
+			"HTML-CSS": { scale: 80, linebreaks: { automatic: true } }, 
+			SVG: { linebreaks: { automatic:true } } })
+	</script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<a class="navbar-brand" href="../index.html">shio</a>
+
+		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Advent2017</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown01">
+						<a class="dropdown-item" href="index.html">Top</a>
+						<a class="dropdown-item" href="day1.html">Day1</a>
+						<a class="dropdown-item" href="day2.html">Day2</a>
+						<a class="dropdown-item" href="day3.html">Day3</a>
+						<a class="dropdown-item" href="day4.html">Day4</a>
+						<a class="dropdown-item" href="day5.html">Day5</a>
+						<a class="dropdown-item" href="day6.html">Day6</a>
+						<a class="dropdown-item" href="day7.html">Day7</a>
+						<a class="dropdown-item" href="day8.html">Day8</a>
+						<a class="dropdown-item disabled" href="#">Day9</a>
+					</div>
+				</li>
+			</ul>
+<!--      <form class="form-inline my-2 my-lg-0">-->
+<!--        <input class="form-control mr-sm-2" type="text" placeholder="Search">-->
+<!--        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+<!--      </form>-->
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="article col">
+				<div class="page-header">
+					<h1>なぜ勉強をしたいか <small>神が死んだ後で</small></h1>
+				</div>
+				<div class="articleMain">
+					<h2>「勉強しろ」と言う人</h2>
+					<p>僕は「勉強しろ」という言葉が嫌いである。</p>
+					<p>家庭教師や個別指導している人はわかると思うが、受験を控えた生徒で全くやる気のない子は少なくない。そういう子がなぜ教わりに来るかというと、それは親のモチベーションである。「中学受験は親の受験」などという言葉もあるが、例えば親が医者でどうしても継がせたいから絶対に名門校に入れなければならないなどという理由で通わせたりするわけである。</p>
+					<p>そのような子に対して何を教えたら良いのであろうか。算数が、国語が、理科が、社会が、英語が、今後生きていく上でどのような理屈で重要になって来るかを知らないままひたすら勉強する意味は何なのだろうか。</p>
+					<p>ちなみに僕は中学受験をしたのだが、小学校の時は尋常じゃないほど勉強をした。今後の人生であそこまで勉強することがあるだろうか。大学受験の比ではなかった。小学生、出来てしまうのである。ちょっとうまく行きさえすれば、ゲームの要領で勉強していくことが出来てしまうのである。そこに意味を見出すことがなくとも、問題が解ける快感と、順位と偏差値という優越感とで満足できるのである。</p>
+					<p>しかしそれは不安定なもので、ひとたび順位が下がったりすれば楽しくなくなってしまう。というか、勉強の内容は足並みを揃えて進んでいくので、どう考えても下半分の子は解けないし、順位も低いわけである。だから、その半分の子は、「勉強」は楽しくなくなってしまう。にもかかわらず、親は「本人の努力不足だ」と言って苦痛な勉強を強いるわけである。もはや拷問である。</p>
+					<p>ちなみに私は勉強してよかったと思っている。あのときの勉強がなければ、こんなに深く人類の叡智に触れることはなかったと思っている。しかしそれは結果論であり、純粋に宝くじに当たったようなものだ。僕は智への欲求がたまたまあったからよかったものの、もしそうでなかったら(勉強が楽しかったとしても)意味のないものになっていだであろう。意味があるかどうかわからないものを強制されるのはいかがなものなのだろうか。</p>
+					<p>僕の専攻は生物情報科学である。専攻が決まる前、バイオインフォマティクスをやろうと思う、と色々な人に相談したら皆口を揃えてこう言った。</p>
+					<p>「ベイズをやろう」</p>
+					<p>果たして専攻の授業が始まればすぐにベイズ統計をすることになった。しかし、その宝くじのような不安感と預言のような気持ち悪さは消えなかった。中学受験の社会で年号を覚えた時も、大学で線形代数を学んだ時も、同じような気持ち悪さを覚えた。</p>
+					<p>「今はわからないけど、いずれ役に立つから」</p>
+					<p>この言葉は、問題を外部化し、独立した内目的的なものにする。目的の網目から締め出され独立した問題は、無批判でプリミティブなハードコアとして存在し続け、子供の心は矛盾に苦しめられることとなるのだ。</p>
+					<h2>学問と教育</h2>
+					<p>僕は、学問とは「個人の持つ指向性から行動までを繋ぐ行為」だと思っている。「美味しいご飯を作りたいな」というアプリオリな指向性があり、そこから「じゃあ、何をするか」を考える時に、人間の味覚の受容の機構を分子細胞生物学と神経科学で解析し、それに即した調理法を有機化学と熱力学から考察し、そのためのツールを工学で、食材を農学で開発していくのではないだろうか。場合によっては食事の場づくりやタイミングなども関わってくるだろう。「〜したい」から、「〜しよう」までを繋ぐ道筋が学問なのだとすれば、教育とはその道案内なのではないだろうか。</p>
+					<p>つまるところ教育がすべきことは「勉強をさせること」ではなく、「この勉強をすると何がわかるか」の見通しを与えることだと思う。その見通しが綺麗に立っていれば、アプリオリな欲求から行動までの一本道が立つので、放っておいても勉強をするであろう。</p>
+					<h2>アプリオリな欲求</h2>
+					<p>では、アプリオリな欲求とは何であろうか。少なくとも人類は、数十年ほど前までは「生存」の欲求があったと思う。ここで言う欲求は、<a href="day8.index">8日目</a>の議論で言うところのオブジェクト指向的な物である。りんごが落ちようとするのと同様に、ウィルスは自己複製するようプログラムされている。現在の生物学的には、ウィルスは無生物であるというのが主流である。それと同じように、草も木も、魚も、鳥も、そして人間も、「自らの遺伝子をもったオブジェクトを増やす」欲求を備えてきた。もちろんそれだけであるとは全く言わないが、我々のほんの2世代くらい前までは少なくともそのアプリオリな欲求を持っていた。「家の存続」は非仮言的な善であり、家に男子が産まれないことは絶対的不幸であった。「結婚しないこと」も「同性愛」も、全てが悪であった。</p>
+					<p>しかし、今やそのハードコアが崩された。人間はもはや自分の遺伝子を残す必要はなくなったのである。「種の保存」が外目的的になったということは、「日本の人口の減少」は「若者の一人当たりの年金負担額が増える」などという意味でしかなくなった。「子育て」は「趣味」のようなものになり、「死」も今後の行動の選択の一つに入るようになった。</p>
+					<h2>神は死んだ</h2>
+					<p>それに伴って急上昇してきたのが、「自己実現」の欲求である。人類の文明の進歩により生存が脅かされることはかなり少なくなった。少なくとも日本では、「生きたくとも生きられない」確率はものすごく小さくなったと思うし、今後もそれは進歩していくであろう。今までは生存の欲求と自己実現の欲求が衝突した時は前者が勝っていたが(自由恋愛したいが、家の存続の為にお見合い結婚で「いい」家のひとと結婚させられる、など)、そんなことをしなくても遺伝子を残したければ残せる世界になっていくので、いよいよ行動の規範は自己実現となっていくであろう。</p>
+					<p>「生きる意味」などは(アプリオリには)自分の中には存在しないので、死にたければ死ねばよいことになる。ここで勘違いしてはいけないのは、「生きる意味」が無いからといって死ななければならない訳ではなく、「死ぬ意味」も(アプリオリには)存在しない、ということである。「生きる意味」「死ぬ意味」などはだれも規定しないので、自分の中で「見出していく」ことになる。ニーチェに言わせれば、「神」というアプリオリな存在は死に、冒涜されることはもうないので、自らの確立した人生を生きる「超人」になるということである。</p>
+					<h2>死への存在</h2>
+					<p>ただひとつ条件がある。「人間はいつか、死ぬ」ということである。医学の進歩によりかなり長く生きられるようになったが、それでも死ぬのである。いつ死ぬかは偶然的であり不確実だが、いつか死ぬということは確実なのだ。ニーチェは死に対し、「永劫回帰」の観点から死の恐怖からの解放を解いた。「死ぬときには生きていないし、生きている間は死なない」という言説もそちら側であろう。</p>
+					<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:680px;" title="www.geocities.jp/studia_patristica/exis12.htm" src="https://hatenablog-parts.com/embed?url=http://www.geocities.jp/studia_patristica/exis12.htm" frameborder="0" scrolling="no"></iframe>
+					<p>しかしハイデガーはその逆で、「死への存在」として人間を捉えている。自らの意志ではなく企投された我々は、「死への先駆的覚悟」をしてこそ、生の意味を見いだせると説いた。死ぬまでには有限の時間しか無いのだから、どうしてもやらなければならないことにその有限の時間を割くということである。</p>
+					<p>だから人間は、「どう生き、どう死ぬか」を適切に見極める為に思考するのだ。例えば「贅沢な暮らしがしたい」と「働きたくない」などという欲求があるとして、その二つが別々に存在するから矛盾するのである。「贅沢な暮らしがしたい←お金がたくさんあればよい←たくさん働けばよい」と考えれば、「働きたくない」は「働きたい」に変わるかもしれない。また、この矢印は十分条件なので、たくさん働かなくても例えば、「贅沢な暮らしがしたい←お金がたくさんあればよい←本気でビットコインを運用しよう」となるかもしれないし、「贅沢な暮らしがしたい←時間的に自由な生活があればいい←田舎で自給自足の生活をしよう」などとなる訳である。更には、「働いたときのストレスと、働いた後の利益とを天秤にかけたらプラスだからしんどいけど働こう」などと、内部化して考えることもできる。<br/>ここで、もし明日死ぬことがわかったとして今日働くかどうかを考える。今日生み出した利益は享受されることがないわけである。「それなら今の全財産使って美味しいもの食べよう」と思うかもしれない。これは明日でなくてもそうである。いずれ来る「死」のことを見据えて、その中で自分の欲求の指す方向性にどうアプローチしていくかを考えなければならない。いつ死ぬかはわからないので、自分の中で予想を立てるしかない。確率的には多分85くらいまで生きるところにピークがあるので、そのような感じでライフプランを立てることになる。</p>
+					<h2>私がなぜ勉強するのか</h2>
+					<p>「学問」を行うメリットは、自己実現に近づくライフプランの立て方が上手くなることだ。その為のツールとして「勉強」がある。学問に携わる人々は、自分の学問の魅力を語れるようにしておくと、自分以外の人々を幸せにできるかもしれない。</p>
+				</div>
+			</div>
+		</div>
+	</div><!-- /.container -->
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6 col-sm-4">
+				<a class="btn btn-social btn-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://musicshio.github.io/sites/advent2017/day9.html" role="button"><i class="fa fa-facebook left"></i> Facebook</a>
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<a class="btn btn-social btn-tw" href="http://twitter.com/share?url=https://musicshio.github.io/sites/advent2017/day9.html&text=なぜ勉強をしたいか+-+Advent+Calendar+2017" role="button"><i class="fa fa-twitter left"></i> Twitter</a>
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<a class="btn btn-social btn-gplus" href="https://plusone.google.com/_/+1/confirm?hl=ja&url=https://musicshio.github.io/sites/advent2017/day9.html" role="button"><i class="fa fa-google-plus left"></i> Google +</a>
+			</div>
+		</div>
+	</div>
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>
