@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Day10 - Advent Calendar 2017</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<!--add CSS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/article.css">
+	<link rel="stylesheet" href="../css/code.css">
+<!--	// YakuHanJP-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanjp.min.css">
+
+<!--	// YakuHanJPs-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanjp_s.min.css">
+
+<!--	// YakuHanMP-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanmp.min.css">
+
+<!--	// YakuHanMPs-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanmp_s.min.css">
+					<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			tex2jax: {
+				inlineMath: [['$','$'], ['\\(','\\)']], 
+				displayMath: [['$$','$$'], ['\\[','\\]']], 
+				processEscapes: true 
+			}
+		});
+	</script>
+	<script type="text/x-mathjax-config"> 
+		MathJax.Hub.Config({ 
+			"HTML-CSS": { scale: 80, linebreaks: { automatic: true } }, 
+			SVG: { linebreaks: { automatic:true } } })
+	</script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<a class="navbar-brand" href="../index.html">shio</a>
+
+		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Advent2017</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown01">
+						<a class="dropdown-item" href="index.html">Top</a>
+						<a class="dropdown-item" href="day1.html">Day1</a>
+						<a class="dropdown-item" href="day2.html">Day2</a>
+						<a class="dropdown-item" href="day3.html">Day3</a>
+						<a class="dropdown-item" href="day4.html">Day4</a>
+						<a class="dropdown-item" href="day5.html">Day5</a>
+						<a class="dropdown-item" href="day6.html">Day6</a>
+						<a class="dropdown-item" href="day7.html">Day7</a>
+						<a class="dropdown-item" href="day8.html">Day8</a>
+						<a class="dropdown-item" href="day9.html">Day9</a>
+						<a class="dropdown-item disabled" href="#">Day10</a>
+					</div>
+				</li>
+			</ul>
+<!--      <form class="form-inline my-2 my-lg-0">-->
+<!--        <input class="form-control mr-sm-2" type="text" placeholder="Search">-->
+<!--        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+<!--      </form>-->
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="article col">
+				<div class="page-header">
+					<h1>おいしくケーキを食べよう <small>測度と平等</small></h1>
+				</div>
+				<div class="articleMain">
+					<h2>ケーキを分ける</h2>
+					<p>めちゃくちゃベタな話であるが、しばしお付き合い願いたい。</p>
+					<p>あなたと友達で大きなケーキを平等に分けるとする。</p>
+					<p>ちなみに「平等」と「公平」に関しては単語の定義の段階で人によってまちまちなので、ここでは「平等」のみを用いる。何をもって「平等」なのかをこれから考えていきたいのだ。</p>
+					<p>どのようにすれば"平等"に分けられるだろうか。</p>
+					<h2>分子レベルで二つに分ける</h2>
+					<p><strong>ケーキの質量を厳密に測定し、それの0.5倍ずつを貰う</strong>。さすがに無理がある気がするが...。</p>
+					<p>まず、ケーキは分子の集合なので、<strong>厳密に半分にしようとすると分子が千切れる確率がほぼ100%</strong>である。分子ならまあ共有結合とかを切ればいいと思うかもしれないが、更に分割して<strong>原子、陽子、クオークまでいくとそうもいかない</strong>。現状の物理学は、<strong>クオークや電子のような12のフェルミ粒子によって物質が構成されている</strong>と考える。ということは、それ以上<strong>分割不可能</strong>だということである。もちろんそれに対する反論は存在するが(<a href="https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%AC%E3%82%AA%E3%83%B3">プレオン理論</a>など)、いずれにせよ完全に真っ二つにできることは難しいであろう。</p>
+					<p>しかしよく考えると、<strong>世界がすべて一つの粒の組み合わせでできていると仮定すれば、ケーキは1/2くらいの確率で偶数個の粒子からなるので、完全に真っ二つにできる</strong>と思うかもしれない。しかしそうではない。例えば陽子を考えた時、陽子はアップクオーク2つとダウンクオーク1つからなる。それぞれ電子の20倍、10倍程度の質量であるが、3つが組み合わさった陽子は電子の約1836倍の質量となる。これらは、「強い相互作用」の結合エネルギーによるものである。<strong>一つのケーキの質量と、半分に分割した後の2つのケーキの質量の和は、異なるのである。ケーキは切ると軽くなる。</strong></p>
+					$$
+					E=mc^2 \Leftrightarrow \frac{E}{c^2}=m
+					$$
+					<p>特殊相対性理論にもとづけば、<strong>エネルギーと、質量(の定数倍)は等価である</strong>。<strong>質量保存の法則は成り立たない</strong>のだ。ということは例えばケーキの持つ位置を(十分ゆっくり)下げたときに、その位置エネルギーの変化分がまず熱になり、それが冷える(元の温度に戻る)過程で宇宙空間に電磁波を放出し、質量が減少するものと思われる。<strong>ケーキは切ったり動かしたりすると質量が変わってしまう</strong>のである。</p>
+					<p>ということは、できるだけ厳密に切って、あとは適宜温めたり動かしたりして微調整すると良さそうである。</p>
+					<h2>いつものやつ</h2>
+					<p>なんて答えは誰も求めていない。</p>
+					<p>人々は<strong>ケーキを質量や体積で等分されたら怒る</strong>であろう。例えば以下のような場合である。</p>
+					<blockquote class="twitter-tweet" data-lang="ja">
+					<p dir="ltr" lang="ja">《平等に分けるには？》<br />家族は6人。お父さんが正方形のチョコレートケーキを図のように切り分けようとしたところ，娘が「その切り方だと，真ん中の二つだけチョコレートのコーティングが少なくなる」と指摘しました。体積だけでなく，表面のチョコレートのコーティングも平等に6等分するには？ <a href="https://t.co/AN5pG7N2Me">pic.twitter.com/AN5pG7N2Me</a></p>
+					— 科学雑誌Newton（ニュートン）公式 (@Newton_Science) <a href="https://twitter.com/Newton_Science/status/924878739447484416?ref_src=twsrc%5Etfw">2017年10月30日</a></blockquote>
+					<p>
+					</p>
+					<p> </p>
+					<p>例えばこのような場合。<strong>内部のスポンジ部分も、表面のコーティングも同じになるように分けなければならない</strong>。うーん。</p>
+					<br>
+					<br>
+					<br>
+					<p>できた！</p>
+					<br>
+					<br>
+					<div align="center">
+						<img src="img/cake.jpg" alt="cake" title="チョコレートケーキ" width=60%>
+					</div>
+					<br>
+					<br>
+					<br>
+					<br>
+					<div align="center">
+						<img src="img/cake_3D.jpg" alt="cake3D" title="チョコレートケーキ3D" width=60%>
+					</div>
+					<br>
+					<br>
+					<p>この人がけっこうかわいそうである。</p>
+					<div align="center">
+						<img src="img/cake_3D2.jpg" alt="cake3D2" title="チョコレートケーキ3D2" width=60%>
+					</div>
+					<p> </p>
+					<h2>測度が違う</h2>
+					<p>しかしこの例ではどうであろうか。</p>
+					<p><iframe class="hatenablogcard" style="width: 100%; height: 155px; margin: 15px 0; max-width: 680px;" title="ケーキ分割問題 - odz buffer" src="https://hatenablog-parts.com/embed?url=http://d.hatena.ne.jp/odz/20071109/1194627198" frameborder="0" scrolling="no"></iframe></p>
+					<blockquote>
+					<ul>
+					<li>同じ大きさのケーキでも個々人が感じる価値は異なる</li>
+					<li>ケーキを分割したとき、元のケーキの価値と分割されたケーキ片の価値の総和は等しい</li>
+					<li>どのような大きさのケーキ片も非負の価値を持つ</li>
+					<li>どのような大きさのケーキも分割することができる</li>
+					</ul>
+					</blockquote>
+					<br>
+					<p> ということである。要するに、<strong>「Aさんはイチゴがすき」「Bさんは生クリームが少ないと怒る」「Cさんは、ケーキとはスポンジが全てで残りはゴミだと思っている」</strong>のようなことである。この場合、<strong>全員が「自分の中で全体の1/n以上のケーキをもらえている」状況は可能なのだろうか</strong>。</p>
+					<h2>二人の場合</h2>
+					<p>n=2の場合はよく言われるやつである。</p>
+					<blockquote class="twitter-tweet" data-lang="ja">
+<p dir="ltr" lang="ja">【平等】<br />ケーキの取り合いで兄弟喧嘩した時に母親が、<br />「ジャンケンで買った方が好きな大きさに分けてね、負けた方は選んでいいよ」と言うシステムを越えるスッキリルールは未だかつてない。 <a href="https://t.co/immR8HGDWA">pic.twitter.com/immR8HGDWA</a></p>
+— 多勢裕哉 (@taseyuya) <a href="https://twitter.com/taseyuya/status/931856128715104256?ref_src=twsrc%5Etfw">2017年11月18日</a></blockquote>
+					<p><strong>片方が半分に切って、もう片方が好きな方を取る</strong>というものである。これ実は、先手は損したくないので1/2に切るが、後手は自分が好きな方を選べるので1/2より大きくなる可能性がある。よってじゃんけんが負けたほうが切ったほうがいいかもしれない。</p>
+					<h2>三人以上</h2>
+					<p>一般の人数の場合はたしかに難しい。これについては僕が友人に出されて結局わからなかった。答えを聞けばそこそこ単純なので、みなさんも考えてほしい。ちなみに答えは一番下のリンクから見ればわかります。</p>
+					<h2>envy-free</h2>
+					<p>今までの話で興味深いのは、「<strong>皆が自分の価値観で1/n以上もらっている、という分割が存在する</strong>」ということである。雰囲気的には、イチゴが好きな人にはイチゴを、クリームが好きな人にはクリームをあげるようなシステムを作れば、皆が納得の行く配分を達成できるのだ。</p>
+					<p>さらに言えば、「不満の出ない」分割も達成できることが知られている。「<strong>皆が自分の価値観で、自分が一番多くもらっている</strong>」ような分割である。<strong>誰も他人を羨まなくて済む、平和な世界である。</strong></p>
+					<h2>現実世界の配分問題</h2>
+					<p>これは現実の社会においても同じである。この世の中には<strong>多種多様な「財」</strong>が存在する。資源であったり、時間であったり、人間であったりである。しかしそれは<strong>有限であり、それを皆に分配していく</strong>のである。現実社会における"ケーキ"を考えるなら、次のようになる。</p>
+					$$
+					{\bf A} = (A_k) =\{イチゴa個,生クリームb{\rm mL},トマトc個,\dots土地p{\rm km}^2,電力q{\rm kw/h},時間n*r分\dots\}
+					$$
+					<p>このような馬鹿でかい"ケーキ"を全員で分けていくこととなる。</p>
+					<h2>水平的平等？</h2>
+					<p>最初に質量で分けたように、客観的な一つの価値観に基づいて配分してみるとしよう。参加者の数を$n$、$i$さんへの財$k$の配分を$A_k(i)$とおくとき、</p>
+					$$
+					{\bf A}(i) = (A_k(i)) =\{イチゴa/n個,生クリームb/n{\rm mL},トマトc/n個,\dots土地p/n{\rm km}^2,電力q/n{\rm kw/h},時間r分\dots\}
+					$$
+					<p>これは平等の一つの形である。要するに、「<strong>ケーキをミキサーにかけてn杯のジュースにする</strong>」という戦略である。</p>
+					<p>しかしこれは、「<strong>パレート最適</strong>」ではない。例えばこう分けた後で、イチゴがもっとほしくてトマトが要らない人とトマトがもっと欲しくてイチゴが要らない人が居たら、そこで交換したほうが社会全体の幸福度は増大する。「パレート最適」とは、「<strong>これ以上は自分の効用をあげようとするとどうしても他人の効用を奪ってしまう</strong>」状態である。この状態はまだパレート改善可能なのだ。</p>
+					<h2>垂直的平等？</h2>
+					<p>要するに先ほど「客観的な一つの価値観」と言ったが、<strong>人によって価値観は違うため、「客観的な価値観」などというものは存在しない</strong>のだ。先ほどの例で言うと、一口に「イチゴ」と言っても「<strong>俺はあまおう以外のイチゴは価値がないと思っている</strong>」みたいな人が存在する可能性がある。その人にたくさんとちおとめが渡った場合、その人は満足できない。すべてをn等分する戦略には、そこに限界がある。</p>
+					<p><strong>全員が違う価値観を持つこの世界で、皆が「納得」するように配分をすることはなかなか難しい</strong>。どのような社会であればよいのであろうか。</p>
+					<br>
+					<p>-つづく-</p>
+					<h2>Reference</h2>
+					<p><a href="http://nadamath2012.web.fc2.com/bushi/2011_mitani.pdf">ケーキを分割する方法について</a></p>
+			</div>
+		</div>
+	</div><!-- /.container -->
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6 col-sm-4">
+				<a class="btn btn-social btn-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://musicshio.github.io/sites/advent2017/day10.html" role="button"><i class="fa fa-facebook left"></i> Facebook</a>
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<a class="btn btn-social btn-tw" href="http://twitter.com/share?url=https://musicshio.github.io/sites/advent2017/day10.html&text=おいしくケーキを食べよう+-前編-+-+Advent+Calendar+2017" role="button"><i class="fa fa-twitter left"></i> Twitter</a>
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<a class="btn btn-social btn-gplus" href="https://plusone.google.com/_/+1/confirm?hl=ja&url=https://musicshio.github.io/sites/advent2017/day10.html" role="button"><i class="fa fa-google-plus left"></i> Google +</a>
+			</div>
+		</div>
+	</div>
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>
