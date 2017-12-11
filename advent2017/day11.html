@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Day11 - Advent Calendar 2017</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<!--add CSS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/article.css">
+	<link rel="stylesheet" href="../css/code.css">
+<!--	// YakuHanJP-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanjp.min.css">
+
+<!--	// YakuHanJPs-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanjp_s.min.css">
+
+<!--	// YakuHanMP-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanmp.min.css">
+
+<!--	// YakuHanMPs-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanmp_s.min.css">
+					<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			tex2jax: {
+				inlineMath: [['$','$'], ['\\(','\\)']], 
+				displayMath: [['$$','$$'], ['\\[','\\]']], 
+				processEscapes: true 
+			}
+		});
+	</script>
+	<script type="text/x-mathjax-config"> 
+		MathJax.Hub.Config({ 
+			"HTML-CSS": { scale: 80, linebreaks: { automatic: true } }, 
+			SVG: { linebreaks: { automatic:true } } })
+	</script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<a class="navbar-brand" href="../index.html">shio</a>
+
+		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Advent2017</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown01">
+						<a class="dropdown-item" href="index.html">Top</a>
+						<a class="dropdown-item" href="day1.html">Day1</a>
+						<a class="dropdown-item" href="day2.html">Day2</a>
+						<a class="dropdown-item" href="day3.html">Day3</a>
+						<a class="dropdown-item" href="day4.html">Day4</a>
+						<a class="dropdown-item" href="day5.html">Day5</a>
+						<a class="dropdown-item" href="day6.html">Day6</a>
+						<a class="dropdown-item" href="day7.html">Day7</a>
+						<a class="dropdown-item" href="day8.html">Day8</a>
+						<a class="dropdown-item" href="day9.html">Day9</a>
+						<a class="dropdown-item" href="day10.html">Day10</a>
+						<a class="dropdown-item disabled" href="#">Day11</a>
+					</div>
+				</li>
+			</ul>
+<!--      <form class="form-inline my-2 my-lg-0">-->
+<!--        <input class="form-control mr-sm-2" type="text" placeholder="Search">-->
+<!--        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+<!--      </form>-->
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="article col">
+				<div class="page-header">
+					<h1>おいしくケーキを食べよう -後編- <small>メカニズムと被投性</small></h1>
+				</div>
+				<div class="articleMain">
+					<h2>ケーキを分ける</h2>
+					<p>ケーキを分割する際、<strong>何か一つの客観的基準に基づいて分割する</strong>というのはある種の平等の形ではあったが、<strong>一人ひとり価値基準が違うため、効率的な配分では無い</strong>ことがわかった。この発想を実装したのが<strong>社会主義</strong>であったが、<strong>ソ連崩壊</strong>に代表されるように、なかなかうまくはいかなかった。</p>
+					<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:680px;" title="社会主義とは何であったか。" src="https://hatenablog-parts.com/embed?url=http://homepage1.canvas.ne.jp/minamihideyo/note-socialism.htm" frameborder="0" scrolling="no"></iframe>
+					<p>皆がより幸せになれるには、どうしたらよいのだろうか。</p>
+					<h2>支払い</h2>
+					<p>先ほどのケーキの例で言うならば、<strong>何もしていないのに勝手にケーキが出現することはまずない</strong>。ケーキを買ってくるときにはお金が発生したはずである。人々がケーキの配分に対して文句を言うのは、例えば割り勘にして、自分が金を払うからである。タダでもらっておいて文句を言われた場合、あげなければいいだけの話なのだ。(とは言っても、人間そんなに合理的にできてはいないので文句を言うわけなのだが…)</p>
+					<h2>メカニズム</h2>
+					<p>経済学において、<strong>ある「戦略」に対してどのような「配分」が得られるかを決定するもののことを「メカニズム」という</strong>。参加者の集合を$N$、参加者$i$の様々な財に対する「タイプ(=価値観)」の集合を$\Theta_i$、ありうる結果の集合を$\Omega$とした時、メカニズムは</p>
+					$$
+					(S, \omega)
+					$$
+					<p>で表される。ここで$S=(S_i)$は戦略の集合である。</p>
+					<p>まず$i$さんはある財に関して$t_i \in \Theta_i$という価値を感じていて、それにしたがって$\sigma_i(t_i) \in S_i$という戦略を取るとする。そのとき<strong>メカニズムが規定するのは、その戦略に対してどのような結果が起こるか</strong>である。$i$さんにとっては、$\omega_i(\sigma_i(t_i)) \in \omega$という結果が起こる。</p>
+					<p>つまり、「<strong>あなたがこのような行動をしたら、あなたに対してこのような配分や支払いが発生しますよ</strong>」というのがメカニズムである。スーパーの値段表示も、「<strong>あなたがジュースを買うという選択をした場合、このジュースが配分される代わりに108円支払うことになります</strong>」などというシステムになっているわけである。そのメカニズムと、自分の今のタイプ(ジュースがどれだけ飲みたいか)を考えながら、実際にジュースを買うかどうかを検討するわけである。</p>
+					<h2>社会的便益</h2>
+					<p>何度も言うようであるが、<strong>世界に存在する財は有限なのである。それに対してどの程度の価値を見出すかは人それぞれであるが、財そのものは有限である</strong>。先ほどの例で言うならば、店側は「ジュースより108円のほうが大事」であり、客側は「108円よりジュースのほうが大事」と思うからそれを交換するのである。客からすれば、「ジュースより108円のほうが大事なひと=店」を見つけない限りはジュースを飲めないのである。自分で作ればいいと考えても、「作る労働力」という支払いをすることになる。<strong>社会の財が有限である以上、何かの財を得るには別の何かの財を放出しなければならない</strong>。</p>
+					<h2>私的便益</h2>
+					<p>とはいえ、<strong>皆が社会的便益のために行動するとは限らない</strong>。単純に自分の利益しか考えないなら、108円払ってジュースを買うよりも盗んだほうがよい気もする。基本的に人々は、自分の効用を大きくするように行動する。個人の利益の最大化が、社会的利益を最大化するとは限らない(<a href="https://ja.wikipedia.org/wiki/%E5%9B%9A%E4%BA%BA%E3%81%AE%E3%82%B8%E3%83%AC%E3%83%B3%E3%83%9E">囚人のジレンマ</a>など)。メカニズムのひとつの完成形として、「各々が私的便益を最大化した結果、社会的利益が最大化される」ようなものが考えられる。</p>
+					<h2>VCGメカニズム</h2>
+					<p>経済学的に、そのようなメカニズムが存在することが知られている。VCGメカニズムと呼ばれるこのメカニズムは、「他人の真の財評価はお互いにわからない(Private Values)」ことのみを仮定する。$i$さんの行動$\sigma_i \in S_i$に対して$x_i$という支払いが発生することを考える。その時、VCGメカニズム$(S, x)$は</p>
+					$$
+					x_i(\sigma_i)= -\sum_{j=N / \{i\} } v_j(g(\sigma), \sigma_j) + h_i(\sigma_{-i})
+					$$
+					<p>で定義される。ここで$g(\sigma)$は戦略に対する配分、$v(g)$はその配分に対する効用の関数である。財$t$に関して$i$さんが$t_i$くらいの価値を感じているとき、$\sigma_i(t_i)$という行動に出るとする。その行動に従って$g(\sigma_i(t_i))$という配分が与えられ、それに対して$i$さんは$v_i(g(\sigma_i(t_i)))$という価値を感じるわけである。</p>
+					<p>VCGメカニズムが言っているのは、「<strong>まずは社会的に財が配分された時、それに対して"他の人が感じた"効用の分だけあなたにお金をあげましょう</strong>」というようなことである。(お金と言ったのは便宜的なものなのであまり気にしなくて良い。本質は物々交換であり、一度お金に換えてからまたモノに変えるというだけである)。このように単純な私的便益に他者の利益を「<strong>内部化</strong>」することで、社会的便益に一致させるのである。会社で「給料」が払われたりすると思えばわかりやすい。<strong>自分は働くのは大変であるが、それによって会社にもたらされる価値のぶんだけ給料を支払われるので、トータルとしては働こうとする</strong>わけである。</p>
+					<h2>垂直的平等</h2>
+					<p>これに元づけば、<strong>効率的配分が達成できる</strong>ことが知られている。たとえばAさんとBさんがいて二人ともイチゴをたべたかったとする。ただ、Aさんのほうがよりイチゴを食べたくて、Bさんはそこそこであるとする。Bさんの立場に立つと、<strong>単純に考えればイチゴを力づくで奪い取って食べることが最適である</strong>。しかしVCGメカニズムが存在する社会では、<strong>BさんはAさんに譲った時にAさんが感じた幸せの分だけお金がもらえるとすると、自分がイチゴをもらった時の幸せよりもそちらのほうが"大きい"のでAさんにイチゴを譲る</strong>わけである。</p>
+					<h2>Pivotメカニズム</h2>
+					<p>とはいえ、<strong>払ってばっかりでは財は無くなってしまう</strong>。配分に対して何かしらを徴収しなければならないことは、先ほど述べたとおりである。先程の"大小関係"を保った上で、払う分だけのお金を徴収しなければならない。それが先程の式で言う$h_i(\sigma_{-i})$である。ただ、これを上げ過ぎると「<strong>参加制約</strong>」を満たさなくなってしまうかもしれない。「<strong>2億払えばイチゴが食べられるが、Aさんに譲れば1億返してあげるよ</strong>」などと言われたら、そもそも「イチゴを誰が食べるかゲーム」に参加したくないであろう。参加制約は、</p>
+					$$
+					v_i-x_i>0
+					$$
+					<p>と言えるであろう。「参加して得られる利益が支払いより大きい」ということである。これを満たさないなら、参加しないほうがマシである。これを満たしたまま、社会的便益を最大化するメカニズムは、Pivotメカニズムと呼ばれている。</p>
+					$$
+					h_i(\sigma_{-i}) = \underset{a \in A}{{\rm max}} \sum_{j=N / \{i\} } v_j(a, \sigma_j)
+					$$
+					<p>これの意味するところは、「<strong>自分が参加しなかった場合、社会にもたらされる配分において、自分以外の参加者が得ていたであろう効用の総和の最大値」の分徴収する</strong>、ということである。Aさんにとっては、自分がいなれけばBさんがイチゴを得ていて、そこそこの幸せを得ていたはずである。<strong>自分が参加することで失われた幸せの分くらいは、何かしらで補填するべきである</strong>、という考え方だ。それを加味したうえでも、Aさんにとっては参加したほうがいいので、Aさんはイチゴを買うわけである。</p>
+					<p>以上のことを総合すると、Pivotメカニズムにおける支払いルールは、「<strong>自分が参加したことで自分以外の世界にもたらされた効用のぶんを貰い、自分が参加したせいで自分以外の人たちが失った効用のぶんを払う</strong>」ということになる。つまり参加することで人々が得る利益(効用-支払い)は、「<strong>自分が居ることで社会の総余剰はどれだけ増加したか</strong>」である。</p>
+					<p>注:VCGメカニズムは、一般には収支均衡しない。支払いの総和を考えた時、</p>
+					$$
+					\begin{eqnarray}
+					\sum_i x_i(\sigma_i)&=& -\sum_i\sum_{j=N / \{i\} } v_j(g(\sigma), \sigma_j) + \sum_i \underset{a \in A}{{\rm max}} \sum_{j=N / \{i\} } v_j(a, \sigma_j)\\
+					&=&  -(N-1)W(\sigma) + \sum_i W_{-i}(\sigma_{-i})
+					\end{eqnarray}
+					$$
+					<p>たとえばこの世界に一人しか人間がいなかった時、その人は何も支払うことなく世界中の財を独占できる。これまでの議論は$N$が十分大きいことを仮定している。</p>
+					<h2>ケーキは食べなければならない</h2>
+					<p>現実社会を"大きなケーキ"としたときに、人類全員でそのケーキを分けることになる。現実社会の難しいところはハイデガーの言う「<strong>被投性</strong>」で、「<strong>人々は生まれたくて生まれたわけではない</strong>」ということである。ケーキを食べたいからゲームに参加するのではなく、<strong>強制的に参加させられている</strong>のである。もし嫌ならば「死」という選択肢を取るしか無い。</p>
+					<p>そしてその状態で、「財の効率的配分」の達成を目指すならば、VCGメカニズムを作る必要があり(<a href="https://web.stanford.edu/~jdlevin/Econ%20285/Vickrey%20Uniqueness.pdf">Green-La§ont-Holmstrom Theorem</a>)、その中で社会的利益を最大にするのがPivotメカニズムである。僕は「道徳」「倫理」などというものに関していろいろ思うところはあるのだが、少なくともみな持つべきであると思っている考え方は、「<strong>自分が居ることで他人に与えた"迷惑"の分くらいは社会に還元しようね</strong>」というものである。それさえ満たせば、あなたはどれだけ幸せになってもいいのである。</p>
+					<p>「<strong>自分は迷惑をかけてばかりだからその補填なんかできない</strong>」などと思う人はいるかもしれない。しかしここで大切なのは、<strong>あなたにとっての価値基準ではなく、あなた以外の価値基準で判断すること</strong>だ。あなたが自分をゴミだと思っていたとしても、他の人があなたに関して価値を感じているならばそれは社会に還元できているのだ。迷惑をかけずに生きることなど誰にもできない。その分を別の形で還元していくのである。</p>
+					<h2>どうせならおいしく食べよう</h2>
+					<p>「<strong>私なんて生きる価値がない</strong>」という人が居る。「<strong>生きる意味がわからない</strong>」という人が居る。他人に迷惑をかけ過ぎない範囲でならどれだけ幸せになってもいいのだから、もう少し好きに人生を生きてみたらどうか。</p>
+			</div>
+		</div>
+	</div><!-- /.container -->
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6 col-sm-4">
+				<a class="btn btn-social btn-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://musicshio.github.io/sites/advent2017/day11.html" role="button"><i class="fa fa-facebook left"></i> Facebook</a>
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<a class="btn btn-social btn-tw" href="http://twitter.com/share?url=https://musicshio.github.io/sites/advent2017/day11.html&text=おいしくケーキを食べよう+-後編-+-+Advent+Calendar+2017" role="button"><i class="fa fa-twitter left"></i> Twitter</a>
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<a class="btn btn-social btn-gplus" href="https://plusone.google.com/_/+1/confirm?hl=ja&url=https://musicshio.github.io/sites/advent2017/day11.html" role="button"><i class="fa fa-google-plus left"></i> Google +</a>
+			</div>
+		</div>
+	</div>
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>
