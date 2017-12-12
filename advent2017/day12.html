@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Day12 - Advent Calendar 2017</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<!--add CSS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/article.css">
+	<link rel="stylesheet" href="../css/code.css">
+<!--	// YakuHanJP-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanjp.min.css">
+
+<!--	// YakuHanJPs-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanjp_s.min.css">
+
+<!--	// YakuHanMP-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanmp.min.css">
+
+<!--	// YakuHanMPs-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanmp_s.min.css">
+					<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			tex2jax: {
+				inlineMath: [['$','$'], ['\\(','\\)']], 
+				displayMath: [['$$','$$'], ['\\[','\\]']], 
+				processEscapes: true 
+			}
+		});
+	</script>
+	<script type="text/x-mathjax-config"> 
+		MathJax.Hub.Config({ 
+			"HTML-CSS": { scale: 80, linebreaks: { automatic: true } }, 
+			SVG: { linebreaks: { automatic:true } } })
+	</script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<a class="navbar-brand" href="../index.html">shio</a>
+
+		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Advent2017</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown01">
+						<a class="dropdown-item" href="index.html">Top</a>
+						<a class="dropdown-item" href="day1.html">Day1</a>
+						<a class="dropdown-item" href="day2.html">Day2</a>
+						<a class="dropdown-item" href="day3.html">Day3</a>
+						<a class="dropdown-item" href="day4.html">Day4</a>
+						<a class="dropdown-item" href="day5.html">Day5</a>
+						<a class="dropdown-item" href="day6.html">Day6</a>
+						<a class="dropdown-item" href="day7.html">Day7</a>
+						<a class="dropdown-item" href="day8.html">Day8</a>
+						<a class="dropdown-item" href="day9.html">Day9</a>
+						<a class="dropdown-item" href="day10.html">Day10</a>
+						<a class="dropdown-item" href="day11.html">Day11</a>
+						<a class="dropdown-item disabled" href="#">Day12</a>
+					</div>
+				</li>
+			</ul>
+<!--      <form class="form-inline my-2 my-lg-0">-->
+<!--        <input class="form-control mr-sm-2" type="text" placeholder="Search">-->
+<!--        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+<!--      </form>-->
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="article col">
+				<div class="page-header">
+					<h1>今日くらい座らせてくれ <small>これからの道徳法則</small></h1>
+				</div>
+				<div class="articleMain">
+					<h2>電車にて</h2>
+					<div align="center">
+						<img src="img/seat.jpg" alt="seat" title="電車の席" width=80%>
+					</div>
+					<br>
+					<p>いや、今日は本当に災難だったなあ。</p>
+					<br>
+					<p>昨日は飲み会だったのに朝は1限があるから6時起き。4限がプレゼンだから授業の合間に準備を進めていた。でもいざプレゼンを始めようとしたら機材トラブルが起きてスライドを映せなかった。パニックになった私はほとんど何を喋ったか覚えていない。フィードバック、散々書かれてるんだろうな。</p>
+					<p>授業が終わればすぐバイトに向かった。飲食店に勤める私は、普段からホールで働いている。人と話すことが好きな私は、接客はあまりしんどいと思ったことはない。ただ今日に限っては、閉店後も居座る客を追い出したり、店長がいないからクレーマー対応を自分でしたり、ちょっと疲れてしまった。プレゼンのミスをずっと引きずってて、あんまり集中できなかったし。</p>
+					<br>
+					<p>そんなバイトも終わり、やっと帰りの電車の中。混んでいたけど、途中の大きな駅で運良く席が空いたので座ることができた。これだけ頑張ったのだから、これぐらい許してもらえるだろう。</p>
+					<br>
+					<p>と思っていたら、目の前におばあちゃんが来た。さっきまで行っていたのであろうか、手にはコンサートのパンフレットが握られていた。</p>
+					<p>一瞬彼女と目が合い、私はすぐ目を伏せた。おばあちゃん、ごめんね。今日はどうしても座っていたいの。</p>
+					<br>
+					<p>「どうぞ」</p>
+					<p>その直後、右に座っていたサラリーマンが席を譲った。「ありがとう」と彼女は座った。</p>
+					<p>なんだ、これじゃあまるで私が悪者みたいじゃないか。私は毎日真面目に勉強して、バイトもがんばってるのに、おばあちゃんは年金ぐらしで、今日出かけたのだって遊びに行っていただけじゃないか。あのサラリーマンだって疲れているだろうし、席を譲ることなんてなかったのに&mdash;&mdash;。</p>
+					<br>
+					<h2>語弊しか無い</h2>
+					<p>僕は<strong>「礼儀」「マナー」の類があまり好きではない</strong>。</p>
+					<br>
+					<p>というと正確ではないので、補足する。</p>
+					<p>その前に、<strong>「礼儀」「マナー」を守らなければならない理由は何であろうか</strong>。<strong>法律</strong>ならわかる。守らなければならないというか、<strong>守らなかった時に罰則が加えられるので、内部化するとトータルで守るインセンティブが生まれる</strong>。</p>
+					<p>それに対して、礼儀やマナーは守らなかった時に罰則があるわけでもない。なのになぜ、それを破ってはいけないのであろうか。</p>
+					<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:680px;" title="礼儀やマナーを守る意味！" src="https://hatenablog-parts.com/embed?url=https://cpakunimi.com/entry-0-323.html" frameborder="0" scrolling="no"></iframe>
+					<br>
+					<br>
+					<blockquote>
+						<p>１．マナーや礼儀を守らない人は信頼されない</p>
+						<cite>礼儀やマナーを守る意味！</cite>
+					</blockquote>
+					<p>これは<strong>循環論法</strong>である。信頼されないためには「マナーや礼儀を守らなければならない」社会になっていなければならない。これでは何も言えていない。</p>
+					<blockquote>
+						<p>２．規則を守らない人は信頼されない</p>
+						<cite>礼儀やマナーを守る意味！</cite>
+					</blockquote>
+					<p>それは規則の問題である。<strong>そもそも規則とは、個人の便益を社会の便益に寄せるために作るものである。「<a href="https://ja.wikipedia.org/wiki/%E4%B8%87%E4%BA%BA%E3%81%AE%E4%B8%87%E4%BA%BA%E3%81%AB%E5%AF%BE%E3%81%99%E3%82%8B%E9%97%98%E4%BA%89">万人の万人に対する闘争</a>」の状態から社会の便益を最大化するために、「<a href="https://ja.wikipedia.org/wiki/%E5%9B%9A%E4%BA%BA%E3%81%AE%E3%82%B8%E3%83%AC%E3%83%B3%E3%83%9E">囚人のジレンマ</a>」を解消するために、規則を、メカニズムを作るのではないだろうか。</strong>「規則を守らない」というならそれは規則の設計が悪いわけである。現在のように一律に罰則を設けるシステムだと限界があるのだ。例えば窃盗の場合。</p>
+					<blockquote>
+						<p>他人の財物を窃取した者は、窃盗の罪とし、十年以下の懲役又は五十万円以下の罰金に処する。</p>
+					<cite><a href="http://www.houko.com/00/01/M40/045.HTM#s2.36">刑法 第二三五条</a></cite>
+					</blockquote>
+					<p>この場合、<strong>窃盗に対して50万円以上の価値を感じる人は窃盗をする</strong>であろう。これはどうしようもない。それが嫌なら、<strong>制度を変える</strong>しか無い。</p>
+					<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:680px;" title="法の限界 | 碁法の谷の庵にて - 楽天ブログ" src="https://hatenablog-parts.com/embed?url=https://plaza.rakuten.co.jp/igolawfuwari/diary/200606170000/" frameborder="0" scrolling="no"></iframe>
+					<p><strong>法の能力はインセンティブのコントロールであって、戦略はコントロールできない</strong>のだ。</p>
+					<blockquote>
+						<p>３．自分だけなら問題ないという落とし穴</p>
+						<cite>礼儀やマナーを守る意味！</cite>
+					</blockquote>
+					<p>これは正しいが、<strong>人々が内部化してインセンティブを考えるべきである</strong>、という主張なので、マナーを守らなければならないという主張とは関係ない。</p>
+					<blockquote>
+						<p>４．社会人になればなるほど重要になる</p>
+						<cite>礼儀やマナーを守る意味！</cite>
+					</blockquote>
+					<p>これも循環論法(ry</p>
+					<blockquote>
+						<p>５．マナー礼儀は相手の価値観を意識する。</p>
+						<cite>礼儀やマナーを守る意味！</cite>
+					</blockquote>
+					<p>これは３.と同(ry</p>
+					<br>
+					<br>
+					<br>
+					<p>というかそもそも、<strong>「守らなければならない」マナーなら規律化すればいいし、そうでないならマナーを守らない人を非難できない</strong>のではないだろうか。</p>
+					<h2>マナーは「助言」でしかない</h2>
+					<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:680px;" title="理不尽な「俺の酒が飲めないのか」…江戸時代の武士は意外な対応 - まぐまぐニュース！" src="https://hatenablog-parts.com/embed?url=http://www.mag2.com/p/news/122247" frameborder="0" scrolling="no"></iframe>
+					<p>僕が嫌いなのは、「<strong>内目的的</strong>」なマナーである。</p>
+					<br>
+					<p>先程の1.のような、<strong>「マナーは守らなければならないものなので、守らなければならない」のような循環論法</strong>に納得できないのである。</p>
+					<br>
+					<p>例えば<strong>挨拶</strong>である。「挨拶をしなければならない」という人は、「挨拶をすると気持ちがいい」というふうに思うから言うのであろう。しかしそこは結びつかない。<strong>挨拶をすると気持ちがいい人は挨拶をすればよいが、そうでない人はなぜ挨拶をしなければならないのか。むしろ「挨拶をすることに精神的な苦痛を感じる」ひとにとっては人権侵害なのではないだろうか。</strong></p>
+					<br>
+					<p>マナーの基本は「<strong>助言</strong>」である。</p>
+					<p>こういうことをしたら他の人が不快に思いますよ、こういうことは他の人が気持ちよくなりますよ、ということである。<strong>それに基づいてどのような行動をするかはまた別の話である。</strong></p>
+					<br>
+					<p><strong>理由なく「Aすることはよいことである」と決めないでいただきたい。それは人格否定である。</strong>僕が「マナー」にたいして持つ違和感はそこである。最初の例で考えるならば、おばあちゃんよりも疲れている人は席に座るべきではないのか。この人は批判されるべきではない。<strong>というかそういう場合に柔軟に対応するために、「優先席」が設けられているのではないのか</strong>。優先席は「お年寄りや身体の不自由な方に席をお譲りください」と「<strong>規則</strong>」として書いてある。優先席は定義的にそういう席なので譲らなくて咎められるのはわかるが、それ以外の席においては<strong>本来的に自由である</strong>。</p>
+					<br>
+					<p>もっと言えば、席を譲るというのが<strong>そもそも効用の収支バランスがおかしい</strong>。おばあちゃんは座れるという配分によって効用を得るが、その配分は本来サラリーマンのものであった。サラリーマンが席を失ったことによって得られることになっている"手当"は、「<strong>お年寄りに席を譲って気持ちいい</strong>」という半ば<strong>狂気じみた信仰</strong>によるものである。「同じ立っているのでも、おばあちゃんのほうが苦痛だから」という理由なのだろうが、それは<strong>本来的に結構ヤバい</strong>。わかりやすく言い換えるならば、「<strong>おばあちゃんが10000発殴られそうになっていてかわいそうなのでお前代わりに5000発殴られろ</strong>」と言われているようなものだ。</p>
+					<br>
+					<br>
+					<div align="center">
+						<p>(脳内が血生臭いので浄化してください)</p>
+						<img src="img/nekopunch.jpg" alt="nekopunch" title="ねこパンチ" width=80%>
+					</div>
+					<br>
+					<br>
+					<p><a href="day11.html">11日目</a>の議論の通り、Pivotメカニズム的には<strong>その分の補填をされなければ参加要件を満たさない</strong>。<strong>サラリーマンが「善意で」譲ることは大変素晴らしいことだと思うが、譲らなかった時に咎められるのはおかしい</strong>と思うのである。おばあちゃんからしても、譲ってもらわなければ耐えられないほどなら他の交通機関を考えたほうがいいであろう。</p>
+					<h2>必要なマナー</h2>
+					<p>とはいえ、この世に存在するマナーの中にはもちろん<strong>理由があるものも存在する</strong>。</p>
+					<br>
+					<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:680px;" title="電車内で通話OKってホントかよ。 - candoit" src="https://hatenablog-parts.com/embed?url=http://candoit.hatenablog.com/entry/2016/03/03/073000" frameborder="0" scrolling="no"></iframe>
+					<p>例えば「<strong>電車内で通話してはいけない</strong>」のような「マナー」が存在する。なぜだろう。</p>
+					<br>
+					<p>「<strong>うるさいから</strong>」</p>
+					<p>普通の話し声やモーター音のほうが多分うるさい。</p>
+					<br>
+					<p>「<strong>電波がペースメーカーにヤバい</strong>」</p>
+					<p>それに関しては総務省がものすごく調べている。</p>
+					<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:680px;" title="総務省 電波利用ホームページ | 電波の植込み型医療機器等への影響の調査研究" src="https://hatenablog-parts.com/embed?url=http://www.tele.soumu.go.jp/j/sys/ele/seitai/chis/" frameborder="0" scrolling="no"></iframe>
+					<br>
+					<blockquote cite="http://www.tele.soumu.go.jp/j/sys/ele/medical/chis/index.htm">
+					<p>平成２４年７月２５日以降サービスが行われている方式の携帯電話端末（スマートフォン等の無線ＬＡＮを内蔵した携帯電話端末を含む。）による植込み型医療機器への影響を調査した結果、一部の植込み型医療機器について、携帯電話から最長で３ｃｍ程度の離隔距離で影響を受けることがあったことから、以下の通り取り扱うことが適切である。</p>
+					<p>ア 植込み型医療機器の装着者は、携帯電話端末の使用及び携行に当たっては、植込み型医療機器の電磁耐性（ＥＭＣ）に関する国際規格（ＩＳＯ１４１１７等）を踏まえ、携帯電話端末を植込み型医療機器の装着部位から１５ｃｍ程度以上離すこと。また、混雑した場所では、付近で携帯電話端末が使用されている可能性があるため、注意を払うこと。</p>
+					<p>イ 携帯電話端末の所持者は、植込み型医療機器の装着者と近接した状態となる可能性がある場所では、携帯電話端末と植込み型医療機器の装着部位との距離が１５ｃｍ程度以下になることがないよう注意を払うこと。なお、身動きが自由に取れない状況下等、１５ｃｍ程度の離隔距離が確保できないおそれがある場合には、事前に携帯電話端末が電波を発射しない状態に切り替えるなどの対処をすることが望ましい。</p>
+					<cite><a href="http://www.tele.soumu.go.jp/resource/j/ele/medical/H28guide.pdf">総務省『各種電波利用機器の電波が植込み型医療機器等へ及ぼす影響を防止するため
+の指針』</a></cite>
+					</blockquote>
+					<p>「<strong>3cmで影響が出る事例が合ったので、15cmぐらいは離そうね</strong>」ということである。さすがに他人のペースメーカーから15cmの距離まで近づいて電話している人は、パーソナルスペースがおかしいと思う。</p>
+					<br>
+					<p>というわけで、先程の記事で挙げられた理由が、「<strong>電話のように一部しか聞こえない会話は無意識的に聞いてしまう</strong>」というものであった。</p>
+					<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:680px;" title="他人の携帯の会話を、つい聞いてしまう理由｜WIRED.jp" src="https://hatenablog-parts.com/embed?url=https://wired.jp/2010/09/27/%e3%80%8c%e6%90%ba%e5%b8%af%e3%81%ae%e4%bc%9a%e8%a9%b1%e3%80%8d%e3%82%92%e3%80%81%e3%81%a4%e3%81%84%e8%81%9e%e3%81%84%e3%81%a6%e3%81%97%e3%81%be%e3%81%86%e7%90%86%e7%94%b1/" frameborder="0" scrolling="no"></iframe>
+					<p>電話の会話は片方の分しか聞こえない。このように<strong>不完全な情報に対しては、我らは無意識にそれを補完しようとして集中してしまう</strong>のである。なるほど、<strong>勝手に人の集中力を削ぐことは迷惑であるのでやめたほうがいい</strong>。ちなみに相手の声も聞こえるようにすると、集中力の減衰はマシになるそうだ。<strong>今度から車内でどうしても電話しなければならない時にはスピーカーで喋ろう</strong>。</p>
+					<br>
+					<br>
+					<br>
+					<br>
+					<p>あ、冗談です。</p>
+					<br>
+					<br>
+					<h2>それと善意</h2>
+					<p>「マナー」と一般的に呼ばれているものを分解すると、<strong>「助言」と「規制」、そして「善意」</strong>となる。</p>
+					<p>それがひとまとまりになっているからおかしくなるのである。<strong>「規制」なら明文化すればよいし、「助言」なら強制力を持ってはいけない。そして、「善意」を持つ人はもちろん褒められるべきであるが、持たない人が咎められるようなことはあってはならない。</strong></p>
+					<h2>マナーのこれから</h2>
+					<p>何にせよ、「マナー」の形が何であれ、我らができることは<strong>便益の「内部化」</strong>である。<strong>自分だけの利益ではなく、他者の利益も考えた上で最良の選択をするのがよい。</strong>座っているよりも譲ったほうが気持ちが良い人は譲ったら良い</strong>のである。それはとても素晴らしいことである。ただ、<strong>自分のほうが椅子を必要としていると思うならば、それは座っていて良い</strong>のである。それも同じくらい素晴らしいことなのだ。</p>
+					<br>
+					<br>
+					<br>
+					<br>
+					<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:680px;" title="優先座席に座る時はそれ相応の覚悟を持て。" src="https://hatenablog-parts.com/embed?url=http://ncode.syosetu.com/n6573dz/" frameborder="0" scrolling="no"></iframe>
+				</div>
+			</div>
+		</div>
+	</div><!-- /.container -->
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6 col-sm-4">
+				<a class="btn btn-social btn-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://musicshio.github.io/sites/advent2017/day12.html" role="button"><i class="fa fa-facebook left"></i> Facebook</a>
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<a class="btn btn-social btn-tw" href="http://twitter.com/share?url=https://musicshio.github.io/sites/advent2017/day12.html&text=今日くらい座らせてくれ+-+Advent+Calendar+2017" role="button"><i class="fa fa-twitter left"></i> Twitter</a>
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<a class="btn btn-social btn-gplus" href="https://plusone.google.com/_/+1/confirm?hl=ja&url=https://musicshio.github.io/sites/advent2017/day12.html" role="button"><i class="fa fa-google-plus left"></i> Google +</a>
+			</div>
+		</div>
+	</div>
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>
