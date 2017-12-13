@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Day13 - Advent Calendar 2017</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<!--add CSS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/article.css">
+	<link rel="stylesheet" href="../css/code.css">
+<!--	// YakuHanJP-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanjp.min.css">
+
+<!--	// YakuHanJPs-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanjp_s.min.css">
+
+<!--	// YakuHanMP-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanmp.min.css">
+
+<!--	// YakuHanMPs-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanmp_s.min.css">
+					<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			tex2jax: {
+				inlineMath: [['$','$'], ['\\(','\\)']], 
+				displayMath: [['$$','$$'], ['\\[','\\]']], 
+				processEscapes: true 
+			}
+		});
+	</script>
+	<script type="text/x-mathjax-config"> 
+		MathJax.Hub.Config({ 
+			"HTML-CSS": { scale: 80, linebreaks: { automatic: true } }, 
+			SVG: { linebreaks: { automatic:true } } })
+	</script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+	<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<a class="navbar-brand" href="../index.html">shio</a>
+
+		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Advent2017</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown01">
+						<a class="dropdown-item" href="index.html">Top</a>
+						<a class="dropdown-item" href="day1.html">Day1</a>
+						<a class="dropdown-item" href="day2.html">Day2</a>
+						<a class="dropdown-item" href="day3.html">Day3</a>
+						<a class="dropdown-item" href="day4.html">Day4</a>
+						<a class="dropdown-item" href="day5.html">Day5</a>
+						<a class="dropdown-item" href="day6.html">Day6</a>
+						<a class="dropdown-item" href="day7.html">Day7</a>
+						<a class="dropdown-item" href="day8.html">Day8</a>
+						<a class="dropdown-item" href="day9.html">Day9</a>
+						<a class="dropdown-item" href="day10.html">Day10</a>
+						<a class="dropdown-item" href="day11.html">Day11</a>
+						<a class="dropdown-item" href="day12.html">Day12</a>
+						<a class="dropdown-item disabled" href="#">Day13</a>
+					</div>
+				</li>
+			</ul>
+<!--      <form class="form-inline my-2 my-lg-0">-->
+<!--        <input class="form-control mr-sm-2" type="text" placeholder="Search">-->
+<!--        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+<!--      </form>-->
+		</div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="article col">
+				<div class="page-header">
+					<h1>君が振られた理由 <small>ベイズ主義とコミュニケーション</small></h1>
+				</div>
+				<div class="articleMain">
+					<h2>恋愛相談</h2>
+					<div align="center">
+						<div class="box">
+							<p>Title:先日彼女に振られました。</p>
+							<p>7ヶ月付き合った彼女に振られました。何の前触れもなく、Lineで別れを告げられました。</p>
+							<p>最後のデートの時もいつも通り仲良く出掛けました。帰り際もまた今度ね、と別れを惜しんで帰りました。</p>
+							<p>突然のことで困惑したのですが、彼女の中では心が決まっているらしく、結局別れることになりました。</p>
+							<p>最後まで理由は教えてもらえず、今になってもやもやしてきました。</p>
+							<p>僕はどうしたらよいでしょうか。</p>
+							<p align="right">東京都・17歳男性</p>
+						</div>
+					</div>
+					<p></p>
+					<h2>本当に半々？</h2>
+					<p>ここにコインがある。</p>
+					<br>
+					<p>○←これ</p>
+					<br>
+					<p>このコインを投げて、表が出る確率はどのくらいだろうか。</p>
+					<br>
+					<br>
+					<br>
+					<br>
+					<p>あなたは$\frac{1}{2}$と思っているかもしれないが、<strong>それは本当だろうか</strong>。</p>
+					<br>
+					<p>例えばそのコインを100回投げたとする。<strong>表が46回とか出る</strong>わけである。</p>
+					<h2>頻度主義</h2>
+					<p><strong>「頻度」としては、46%である。50%ではない。</strong>これは50%表が出るコインと言ってよいのだろうか。<strong>46%と言うべきではないのだろうか。</strong></p>
+					<br>
+					<p>逆に、もし本当に確率$\frac{1}{2}$だとして、100回投げて50回表が出る確率を計算してみよう。</p>
+					$$
+					\left( \frac{1}{2} \right)^{100} \times {}_{100} {\rm C}_{50} = 0.079589\dots
+					$$
+					<p><strong>8%ほどの確率しかない。本当に50%の確率で出るコインですら、実際に50%の頻度で出る確率は8%なのである。</strong>残りの92%は、49回出たり51回出たりするのだ。<p>
+					<br>
+					<p>この立場における論拠として、<a href="https://ja.wikipedia.org/wiki/%E5%A4%A7%E6%95%B0%E3%81%AE%E6%B3%95%E5%89%87">大数の法則</a>や<a href="https://ja.wikipedia.org/wiki/%E4%B8%AD%E5%BF%83%E6%A5%B5%E9%99%90%E5%AE%9A%E7%90%86">中心極限定理</a>などが挙げられる。確かに、試行を多く重ねれば重ねるほど、「真の平均」に近づいて行くように思える。</p>
+					<p>しかしそれでもなお、<strong>可能性としては、「裏、表、表、表、表、..」とそのあと表が1億回続くことも考えられる</strong>のである。それでもなお、<strong>「真の平均」なるものが存在して、それが$\frac{1}{2}$であると考えて良いのであろうか</strong>。子供にテストをさせて何回悪い点数を取ったときに、その子供を「頭が悪い」と決められるのだろうか。</p>
+					<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:680px;" title="メイヤスー４章　resume - おもちもちもちMotical Material Ótico" src="https://hatenablog-parts.com/embed?url=http://modernlove.hatenadiary.jp/entry/2016/11/26/185127" frameborder="0" scrolling="no"></iframe>
+					<p>クァンタン・メイヤスーは、このような「<strong>頻度主義</strong>」に関しても言及している。</p>
+					<blockquote>
+						<p>もし法則が頻繁に変わるなら変わってるはずだ。でもそうはなってない。法則は基本的に変わらない。これは「安定性」に関する帰結で、「絶対性」に関する帰結ではない。「変化する」とは「頻繁に変わる」という意味で、万に一つなら変わることがある、という意味ではない。（155~158)</p>
+					</blockquote>
+					<p>頻度主義における「(頻度から導かれた)確率」というものは、<strong>「安定性」としてのものであり、「絶対性」としてのものではない</strong>ことに留意しておかなければならない。</p>
+					<h2>ベイズ主義</h2>
+					<p>頻度主義においては<strong>「原因」となる確率が絶対的に存在していて、その「結果」が頻度として現れる</strong>と考える。</p>
+					<p>しかし思えば、<strong>確実にわかっているのは「結果」なのだから、そこからわれわれが「原因」を推定する</strong>、とも考えられるのではないか。<strong>どれだけ多く投げたところで、本当に確率$\frac{1}{2}$で表が出るコインなのかはわからないのだから、むしろ「本当の確率」を「確率的に」評価したらよいのではないだろうか</strong>。</p>
+					<h2>ベイズ推定</h2>
+					<p>ベイズ主義においては、このようなコペルニクス的転回に基づき「<strong>主観的に</strong>」確率を考える。<strong>「このコイン、だいたい50%の頻度で表が出るから確率も表50%ぽい」「でも、ワンチャン確率は40%で、たまたまちょっと多めに表が出ただけかもしれない」</strong>のような感じである。</p>
+					<br>
+					<iframe src="//www.slideshare.net/slideshow/embed_code/key/EsIROlkjCy5ss9" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/hoxo_m/5-28064011" title="5分でわかるベイズ確率" target="_blank">5分でわかるベイズ確率</a> </strong> from <strong><a href="https://www.slideshare.net/hoxo_m" target="_blank">hoxo_m</a></strong> </div>
+					<br>
+					<p>ベイズ推定は、ベイズの定理に基づいて「真の確率」を推定する。</p>
+					$$
+					P(A|X) = \frac{P(X|A)P(A)}{P(X)}
+					$$
+					<p>P(A)が<strong>"真の確率"(だと思っていること)の分布</strong>である。これは絶対的にはわからないので、主観的なものである。例えば<strong>「大体半分だろう(半分である確率が80%だろう)」「でもひょっとしたら表ばっかりかも(表しか出ない確率が10%)」「ワンチャン裏ばっかりかも(裏しか出ない確率が10%)」</strong>と思っているとする。</p>
+					<br>
+					<p>ここから、<strong>データ$X$が得られた時に自分の中で修正された確率の分布</strong>が$P(A|X)$である。このように、ベイズ推定においては<strong>自分の中での主観的確率を、データに基づいてどんどん修正していく</strong>という立場を取る。</p>
+					<p>$P(X|A)$は、「<strong>今頭の中にある"真の確率"に従って、データ$X$が出てくる確率</strong>」である。例えば表が2回出たとすると、「半々」なら$0.5^2=0.25$、「表ばかり」ならほぼ100%、「裏ばかり」ならほぼ0%である。$P(X)$は、$\sum_{A}P(X|A)P(A)$で計算でき、「$A$であり、そこから$X$が出る確率」の和である。</p>
+					<p>この時$P(A|X)$を計算すると、「半々」であった確率は</p>
+					$$
+					\begin{eqnarray}
+					P(半々|表表) &=& \frac{P(表表|半々)P(半々)}{P(表表)}\\
+					&=& \frac{P(表表|半々)P(半々)}{P(表表|半々)P(半々) + P(表表|表ばかり)P(表ばかり) + P(表表|裏ばかり)P(裏ばかり)}\\
+					&=& \frac{0.25 \times 0.8}{0.25 \times 0.8 + 1 \times 0.1 + 0 \times 0.1}\\
+					&=& \frac{2}{3}
+					\end{eqnarray}
+					$$
+					<p>となり、<strong>80%半々だと思っていたのが67%まで自信がなくなった</strong>。代わりに<strong>「表ばかり」しかでないコインである蓋然性が上昇した</strong>はずである。計算すると33%である。また、「裏ばかり」の可能性は流石に無いと結論付けられた(表が出てしまったので)。</p>
+					<br>
+					<br>
+					<br>
+					<div align="center">
+						<img src="img/butter-cat.png" alt="butter-cat" title="バター猫" width=80%>
+						<p>ちなみに全く関係ないが、<a href="https://ja.wikipedia.org/wiki/%E3%83%90%E3%82%BF%E3%83%BC%E7%8C%AB%E3%81%AE%E3%83%91%E3%83%A9%E3%83%89%E3%83%83%E3%82%AF%E3%82%B9">バター猫</a>はどうなるかは我々は全く予想ができない。</p>
+					</div>
+					<br>
+					<br>
+					<h2>オブジェクト指向な社会実装</h2>
+					<p><a href="day8.html">8日目</a>の議論に基づいて考えるならば、我々は他者の性質について直接的には理解することができない。半々に表が出ると思っていたコインが今日から5億回連続で表が出るかもしれないし、サイコロが100年間2しか出ないかもしれないし、今晩寝ている間に飛行機が家に墜落してくるかもしれないし、ラブラブの恋人から5分後に別れのLineが来るかもしれない。</p>
+					<p>我らは<strong>他者が発信する「メッセージ」を通じて間接的に彼らの情報を知る</strong>のみである。りんごは何回やっても「落ちる」ので、りんごは落ちるものである主観的確率は上がっていくし、恋人が自分に「愛してるよ」と言ってくれるたびに相手が自分を好きである確信度が高まるのである。</p>
+					<p>11、12日目の議論と合わせれば、<strong>財をもらうために皆「メッセージ」を送る</strong>わけである。ケーキを分けるなら、「いちごが好き」「スポンジは嫌い」などということだ。それは<strong>あくまでメッセージなので、お互いがそのメッセージによって主観的確率を更新する</strong>。「いちごが好き」などというかなりストレートな情報以外にも、「この人は前もコーヒーを飲んでいたからコーヒーが好きなのかな」とか、「ご飯に誘ったらちょっと渋そうな顔をしたから、彼女いるのかもな」などである。<strong>お互いが勝手にお互いの情報を解釈し、自分の中で確率を更新していく</strong>のである。</p>
+					<br>
+					<p>財の配分の場合、<strong>社会的便益を考えれば皆が正直に表明したほうがいい</strong>。より欲しい人が、より欲しいことを伝えるべきである。そんなに欲しくない人が「とても欲しい」と嘘をつくと、本来貰うべき人のところに財が行かない可能性がある。</p>
+					<p>しかし、<strong>人々は私的便益に従って行動するので、必ずしもそれが社会的便益と一致するとは限らない。だから、それを一致させるようなメカニズムを作る</strong>訳である。例えば就活などでは、みなできるだけ誇張して自分を見せようとするので、本来採用されるべき人よりも、経歴を盛った人のほうが通ってしまったりする。企業としては、まず<strong>嘘をつきづらいタイプのメッセージを表明させる</strong>(履歴書に書く経歴など)、<strong>嘘をつくコストを上げる</strong>(インターンや何段階かの選考など)などをするのだ。</p>
+					<br>
+					<p>ちなみに僕の意見としては、<strong>皆が必要以上にアピールする現状の就活に関しては反対である</strong>。<strong>自分の能力以上のポジションに就いたとして、だれも幸せにならないのではないか</strong>と思うからである。<strong>できないものはできないと言える社会になれば、理想的に財が配分される世界になるのに</strong>、と思っている。</p>
+					<br>
+					<h2>コミュニケーション</h2>
+					<p>話が逸れてしまった。</p>
+					<br>
+					<p>僕は人とコミュニケーションするときに<strong>相手にどう受け取られているかをできるだけ考える</strong>ようにしている。相手は<strong>こちらがどう考えているかではなく、どう考えているようにみえるかに従って行動する</strong>からである。そのためには自分は<strong>あまり嘘をつかないほうがいい</strong>。辛い時にはちゃんと辛いと言い、無理なものは無理と言うことだ。<strong>私さえ我慢すれば〜などと思うかもしれないが、あなたが嘘をつくことで結果的に他人を不幸にすることだってあるのだ。</strong></p>
+					<p>また、<strong>人を「信用」し過ぎないことだ</strong>。どこまで言っても相手の本当の気持ちを理解することはできない。できることは、相手の情報から<strong>自分の中での「主観的確率」を修正すること</strong>だけである。完全には理解し合えないことを念頭に置いた上で、<strong>お互い「信頼」し合えるとよい</strong>。信頼し合える関係のためには、まずは<strong>相手のことを知ろうと努力すること</strong>である。</p>
+					<br>
+					<p>頑張れ青年。未来は明るい。</p>
+					<br>
+					<h2>Reference</h2>
+					<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:680px;" title="別れた原因別・復縁アドバイス「フラれた理由がわからない」" src="https://hatenablog-parts.com/embed?url=http://www.zwei.com/koisupple/6047.html" frameborder="0" scrolling="no"></iframe>
+				</div>
+			</div>
+		</div>
+	</div><!-- /.container -->
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6 col-sm-4">
+				<a class="btn btn-social btn-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://musicshio.github.io/sites/advent2017/day13.html" role="button"><i class="fa fa-facebook left"></i> Facebook</a>
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<a class="btn btn-social btn-tw" href="http://twitter.com/share?url=https://musicshio.github.io/sites/advent2017/day13.html&text=君が振られた理由+-+Advent+Calendar+2017" role="button"><i class="fa fa-twitter left"></i> Twitter</a>
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<a class="btn btn-social btn-gplus" href="https://plusone.google.com/_/+1/confirm?hl=ja&url=https://musicshio.github.io/sites/advent2017/day13.html" role="button"><i class="fa fa-google-plus left"></i> Google +</a>
+			</div>
+		</div>
+	</div>
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -128,8 +128,23 @@ blockquote cite {
 }
 
 
-
-
+.box{
+    padding: 3em 3em;
+    width: 80%;
+    margin: 10% 0;
+    background: #f4f4f4;
+/*    border-left: solid 6px #5bb7ae;*/
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.33);
+    text-align: left;
+    background-image: linear-gradient( rgba(152,196,255,.3) .1em, transparent .1em );
+ 	background-size: auto 3rem; // line-heightと一致させる
+ 	line-height: 3rem; // background-sizeと一致させる
+ 	overflow: hidden;
+}
+.box p {
+    margin: 0; 
+    padding: 0;
+}
 
 
 
