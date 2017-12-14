@@ -10,14 +10,14 @@ day =  len(files)
 
 def make_dropdown_menu(day, now):
     res = '<div class="dropdown-menu" aria-labelledby="dropdown01">\n'
-    res += '<a class="dropdown-item" href="index.html">Top</a>\n'
+    res += '\t' * 6 + '<a class="dropdown-item" href="index.html">Top</a>\n'
     for i in range(1,day+1):
         if i == now:
-            res += '<a class="dropdown-item disabled" href="#">Day%d</a>\n'%i
+            res += '\t'*6 + '<a class="dropdown-item disabled" href="#">Day%d</a>\n'%i
         else:
-            res += '<a class="dropdown-item" href="day%d.html">Day%d</a>\n'%(i,i)
+            res += '\t'*6 + '<a class="dropdown-item" href="day%d.html">Day%d</a>\n'%(i,i)
 
-    res += '</div>'
+    res += '\t'*5 + '</div>'
 
     return res
 
