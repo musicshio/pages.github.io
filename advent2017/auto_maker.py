@@ -24,11 +24,19 @@ def make_dropdown_menu(day, now):
 for file in files:
     print file
     now = int(file.replace('day','').replace('.html',''))
+    file = os.path.join(here,file)
     with open(file, "r") as f:
         source = f.read()
         begin = source.find('<div class="dropdown-menu" aria-labelledby="dropdown01">')
         end = source[begin:].find("</div>") + begin + 6
-    print begin, end
-    print source[begin:end]
+
     with open(file, "w") as f:
         f.write(source[:begin] + make_dropdown_menu(day, now) + source[end:])
+
+
+######################
+# just run 
+# python auto_maker.py
+# 
+#
+#
