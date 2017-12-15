@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Day15 - Advent Calendar 2017</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<!--add CSS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/article.css">
+	<link rel="stylesheet" href="../css/prettify.css">
+<!--	// YakuHanJP-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanjp.min.css">
+
+<!--	// YakuHanJPs-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanjp_s.min.css">
+
+<!--	// YakuHanMP-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanmp.min.css">
+
+<!--	// YakuHanMPs-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanmp_s.min.css">
+					<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			tex2jax: {
+				inlineMath: [['$','$'], ['\\(','\\)']], 
+				displayMath: [['$$','$$'], ['\\[','\\]']], 
+				processEscapes: true 
+			}
+		});
+	</script>
+	<script type="text/x-mathjax-config"> 
+		MathJax.Hub.Config({ 
+			"HTML-CSS": { scale: 80, linebreaks: { automatic: true } }, 
+			SVG: { linebreaks: { automatic:true } } })
+	</script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<a class="navbar-brand" href="../index.html">shio</a>
+
+		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Advent2017</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown01">
+						<a class="dropdown-item" href="index.html">Top</a>
+						<a class="dropdown-item" href="day1.html">Day1</a>
+						<a class="dropdown-item" href="day2.html">Day2</a>
+						<a class="dropdown-item" href="day3.html">Day3</a>
+						<a class="dropdown-item" href="day4.html">Day4</a>
+						<a class="dropdown-item" href="day5.html">Day5</a>
+						<a class="dropdown-item" href="day6.html">Day6</a>
+						<a class="dropdown-item" href="day7.html">Day7</a>
+						<a class="dropdown-item" href="day8.html">Day8</a>
+						<a class="dropdown-item" href="day9.html">Day9</a>
+						<a class="dropdown-item" href="day10.html">Day10</a>
+						<a class="dropdown-item" href="day11.html">Day11</a>
+						<a class="dropdown-item" href="day12.html">Day12</a>
+						<a class="dropdown-item" href="day13.html">Day13</a>
+						<a class="dropdown-item" href="day14.html">Day14</a>
+						<a class="dropdown-item disabled" href="#">Day15</a>
+					</div>
+				</li>
+			</ul>
+<!--      <formumei 
+jidou class="form-inline my-2 my-lg-0">-->
+<!--        <input class="form-control mr-sm-2" type="text" placeholder="Search">-->
+<!--        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+<!--      </form>-->
+		</div>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="article col">
+				<div class="page-header">
+					<h1>それでもお釣りは払う <small>ブラックボックスとシンギュラリティ</small></h1>
+				</div>
+				<div class="articleMain">
+					<h2>レジの人は「間違う」</h2>
+					<p>スーパーで買い物をするとき、みなさんレジで何を考えているだろうか。</p>
+					<p>たぶん、<strong>早く晩ごはん食べたいなー</strong>とか、<strong>ポイントカード持ってたっけ</strong>とか、<strong>Twitter見たいなー</strong>とかであろう。</p>
+					<p>ところで、こんな経験は無いであろうか。</p>
+					<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:680px;" title="注意 !! スーパーで計算ミス！ | ええもん～おいしいもん - 楽天ブログ" src="https://hatenablog-parts.com/embed?url=https://plaza.rakuten.co.jp/key333/diary/200509110000/" frameborder="0" scrolling="no"></iframe>
+					<p>僕は今までに何度か経験しているが、ときどき<strong>レジの人が打ち間違えることがある</strong>。この例だとそもそも桁が違うからわかるかもしれないが、<strong>たくさんものを買った時に一つ数え忘れたりしたならなかなか気づかない</strong>ものだ。例えば僕は、文化祭の模擬店のために調味料を大量購入した時に、みりんが一つ多く打たれていたことがあった。そのときは、「ピッピッ」と不自然に二回音が鳴ったので気づくことができた。</p>
+					<br>
+					<p>我々は普段から<strong>「レジの人」を信用しながら生きている</strong>。しかし<strong>彼らの計算が「合っている」確率は100%ではないので、本当に「合っている」か確かめるためには自分で計算しておかなければならない。</strong></p>
+					<h2>時計も「間違う」</h2>
+					<p>先程のミスも、基本は店員のミスであろう。だが、本当に100%そうだろうか。レジの機械は絶対に正確なのだろうか。</p>
+					<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:680px;" title="計算機（電卓）の液晶が -液晶の部分が表示されないところがあります。- その他（パソコン・スマホ・電化製品） | 教えて!goo" src="https://hatenablog-parts.com/embed?url=https://oshiete.goo.ne.jp/qa/171693.html" frameborder="0" scrolling="no"></iframe>
+					<p>まずこのようなことがある。まあレジの場合は電光板だからあまりないかもしれないが、電卓なら稀にある現象である。この投稿者の電卓は、<strong>0が7になる</strong>ようだ。</p>
+					<p>僕は中学のころはデジタル時計の目覚ましを使っていた。朝目が覚めると9時と出ていて、完全に寝坊したと大慌てした。急いで準備していたところ、なぜかもう鳴り終わったはずの目覚ましが鳴った。</p>
+					<br>
+					<p>少し考えて、僕はひらめいた。<strong>液晶の表示が一箇所、消えていたのである！</strong></p>
+					<div align="center">
+						<img src="img/time.png" alt="time" title="壊れたデジタル時計" width=80%>
+					</div>
+					<p>「まだ間に合う！」僕は急いで準備を始めた。</p>
+					<h2>電卓も「間違う」</h2>
+					<p>これは画面の問題であって、計算機の中身の方は「正しい」ことを言っているはずだ、と思うかもしれない。</p>
+					<p>まあ実用上は恐らく大丈夫であろう。きっと正確に入力できていれば、正しい計算を行ってくれるはずである。ただ、<strong>本当に「正しい」のかどうかはどう確かめたらいいのだろうか。</strong></p>
+					<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:680px;" title="電卓が故障していないか確認する方法 | しましま生活" src="https://hatenablog-parts.com/embed?url=http://shimashimaseikatu.com/wp/?p=5625" frameborder="0" scrolling="no"></iframe>
+					<p><strong>これはよくない。</strong></p>
+					$$
+					(12345679\times 9 =111111111
+					$$
+					<p>これは筆算すれば正しいとわかる。</p>
+					$$
+					11111111^2 =123456787654321
+					$$
+					<p>これも筆算すればわかる。確かに、少なくともこの二つが正しく計算できることは必要条件である。</p>
+					<br>
+					<br>
+					<iframe src="https://paiza.io/projects/e/iFpN4MNHv9-frNva9Y_X3Q?theme=chrome" width="100%" height="500" scrolling="no" seamless="seamless"></iframe>
+					<p>このプログラムは<strong>上の二つの入力に対して正しい答えを返す</strong>。しかし<strong>それ以外のことを入力された時に「ﾃﾃﾛﾘﾎﾟｯﾎﾟｯﾋﾟｰｗｗｗ」と返すようにしている</strong>。上記の方法だと、<strong>これは「正常な電卓」になってしまう</strong>。<strong>どれだけ正しい例をあげても、この世の計算全てを行わない限り必要十分で「正しい」かどうかはわからない</strong>ということである。</p>
+					<h2>プログラムも「間違う」</h2>
+					<p>それはそうプログラムしているからだ、<strong>正しい原理でプログラムされたなら、「正しい」挙動をするはずである</strong>と反論されるかもしれない。しかしその<strong>「正しい原理」とはなんだろうか</strong>。</p>
+					<br>
+					<p>「<a href="https://ja.wikipedia.org/wiki/%E8%87%AA%E5%8B%95%E5%AE%9A%E7%90%86%E8%A8%BC%E6%98%8E">自動定理証明</a>」という分野がある。例えば<a href="day14.html">14日目</a>に九点円定理の証明を行ってみた。</p>
+					<p>原理の詳細は読んで頂ければわかるのだが、<strong>要するに「問題文の条件」をコンピューターがわかりやすいように教えてやれば、そこから「推論」をして「結論」の式が導き出せるかどうかを判定する</strong>プログラムである。</p>
+					<br>
+					<p>これは、「問題を解いた」と言えるのだろうか？</p>
+					<br>
+					<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:680px;" title="人類の妄想が生み出した数学は最強の道具である - shi3zの長文日記" src="https://hatenablog-parts.com/embed?url=http://d.hatena.ne.jp/shi3z/20170214/1487026817" frameborder="0" scrolling="no"></iframe>
+					<p><strong>数学的原理が完全にわかっているならよい</strong>ような気もする。それは要するに、レジ打ちを見ながら暗算で計算しているのと同じである。すごく丁寧に「筆算」をしていけば、長い時間をかければ同じように答えを導けるはずである。</p>
+					<p>では、数学的原理がわかっていない人にとってはどうか。<strong>問題文をパソコンに入力すると、コンピューターが「真です」「偽です」などと言ってくる</strong>のだ。それを認めることができるのか。<strong>それが絶対的に正しいかを確かめるには結局数学的原理をきちんと理解しなければならない</strong>。では電卓はどうか。<strong>僕達は電卓がどのような仕組みで「掛け算」を行っているか知っているのか。知らないのに計算結果が正しいと言えるのか。</strong></p>
+					<h2>コンピュータも「間違う」</h2>
+					<p>ちゃんと自分で掛け算の原理に従ってプログラムを書いて、電卓を作ったとする。ちなみに先程のプログラムは<strong>C++</strong>という言語で書かれており、<strong>人間の使う自然言語と機械がわかる0と1だけの機械語との中間くらいの性質を持つ</strong>。だから、このプログラムは<strong>まず機械語に翻訳され、その命令に従ってコンピューターが0と1をこねくり回し、出来上がったものをまた機械語から翻訳し、画面に映し出す</strong>のだ。</p>
+					<p><strong>その翻訳が間違っている可能性は無いのだろうか？コンピューターの0と1の演算が間違っていない保証は？</strong>考えていけばキリがない。<strong>結局すべてのことは「暗算」するしかないのではないか。</strong></p>
+					<h2>ブラックボックス化</h2>
+					<p><strong>そんなことはだれも考えていない</strong>のである。僕達は<strong>「信頼」することによって、それを回避しているのだ。</strong></p>
+					<br>
+					<p>電卓の中身はどうなっているか知らないが、<strong>頭のいい人が頑張って作ったからきっと「正しい」</strong>のである。<strong>パソコンで「メールを送れた」と思うのも、電車に駆け込んで「これで間に合う」と思うのも、参考書で学んだ英単語を使ってで外国人に喋りかけるのも、天気予報に従って傘を持たずに家を出るのも、レアのステーキを食べられるのも、全てが「ブラックボックス」である。</strong>「なぜそうなのか」を全て説明できないなら、それは「ブラックボックス」を「信頼」していて、実際殆どの場合それは矛盾しない結果になっているだけのことなのだ。</p>
+					<div align="center">
+						<img src="img/blackbox.png" alt="blackbox" title="ブラックボックス" width=80%>
+					</div>
+					<h2>歴史とは</h2>
+					<p>例えば<strong>歴史学という学問は、実にその全てが「信頼」から成る学問</strong>である。科学ならば<strong>同じ実験を行えば多少気が紛れる</strong>(本来的には時間が違う段階で同じ結果になるかはわからないので)が、<strong>歴史は確かめようがない</strong>。<strong>過去にタイムリープでもしない限り、「鎌倉幕府は1192年か1185年か」などの話が絶対的に正しいかどうかはわからない</strong>のだ。</p>
+					<p>つまり、<strong>「過去の資料」と呼ばれる者たちを「信頼」する</strong>ことになる。これが結構厄介で、冷静に考えれば<strong>過去の人たちが正直に「正しい」ことを書いている保証はない</strong>。今でこそインターネットの普及のおかげで我々の意見は常に衆目に晒されており批判されることが多いが、昔は言い放題言えたことだろう。デタラメ書きまくった資料が今発掘された可能性だってある。</p>
+					<p>また、<strong>それが本当に「過去の資料」であるかは発掘した人しかわからない</strong>。現にそれによって「信頼」が失敗したことは何度もある。</p>
+					<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:680px;" title="藤村新一と小保方晴子 | 哲学カフェ一遍 | 一遍と今をあるく" src="https://hatenablog-parts.com/embed?url=http://ehime-furusatojuku.com/contents/pcafe/jiji/201602_103" frameborder="0" scrolling="no"></iframe>
+					<p>電卓の中身がおかしくても、実用上そこそこ答えが合っていれば、一般人からはわからないのだ。結果的におかしいことが「証明」され、歴史の教科書は大きく変わることになった。</p>
+					<p>実際、<strong>歴史に関しては何とでも主張ができる</strong>のだ。<strong>それが絶対的に「正しくない」ことは証明できないし(悪魔の証明)、おかしい証拠を提示したところでad hocに躱すことができる(<a href="day3.html">3日目</a>)</strong>。もちろん、「説得力」は無いわけであるが。</p>
+					<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:680px;" title="トンデモ「研究」の見分け方・古代研究編" src="https://hatenablog-parts.com/embed?url=http://www.hmt.u-toyama.ac.jp/chubun/ohno/tondemo.htm" frameborder="0" scrolling="no"></iframe>
+					<h2>シンギュラリティ</h2>
+					<p>先の「自動証明」の話に戻ろう。自動証明プログラムはどんどん進化していく。今でこそ人間が示した定理を示すだけだが、<strong>いずれ人間がまだ見つけたことのない定理をどんどん証明していくだろう</strong>。最初のうちはいい。人間がその原理に従って後追いで意味を理解すれば良い。しかしどんどん複雑になっていくにつれ、<strong>いずれ人間の理解を超えたような(人間が順番に理解していくと寿命が尽きてしまうような)定理が出てくるかもしれない</strong>。そのようなものに関して<strong>我々は「『信頼』するか否か」を選択しなければならない</strong>。</p>
+					<h2>「正しい」</h2>
+					<p>ここまで話して、<strong>「正しい」の定義</strong>が問われる。例えば将来AIが「<strong>あなたは今までは幸せでしたが、私の計算によればこの先は辛いことばかりなので今自殺するのがベストです</strong>」と行ってきたらどうであろうか。</p>
+					<p>AIは我々よりはるかに正確に「推論」を行える。自分はいうてそんなことないやろと思っていても、<strong>ほとんど100%の確率でAIの言う結末になるであろう</strong>。</p>
+					<p>対して我々はどうか。<a href="day7.html">7日目</a>にも言ったが、<strong>我々は九九すらも怪しい</strong>。あなたはこれまでの人生で、$1 \times 1$から$9 \times 9$まで、ちゃんと全て正しいことを確認したことがあるであろうか。<strong>あなたは、7を8個集めてその数を数えたことはあるだろうか。</strong>もっといえば、<strong>りんごが1個あって、りんごがもう1個あって、形も大きさも違うのになぜそれが「2」なのかを説明できるのか</strong>。$1+1=2$の本質的なところが様々に議論されてきたことは言うまでもない。</p>
+					<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:680px;" title="１＋１＝２を証明してください。大学の数学科でこの証明をす... - Yahoo!知恵袋" src="https://hatenablog-parts.com/embed?url=https://detail.chiebukuro.yahoo.co.jp/qa/question_detail/q1011667290" frameborder="0" scrolling="no"></iframe>
+					<p>そんな曖昧な人間と、「正しい」の蓄積であるAI。あなたはどちらを信じるか。自殺するのか。</p>
+					<h2>「正しい」の後</h2>
+					<p>僕としては、<a href="day8.html">8日目</a>の議論の通り、<strong>「真理」というのは我々の内にある</strong>ものだと思っている。<strong>あらゆる「法則」は我々が世界を解釈した結果に過ぎないので、我々が何かを「信頼」した時、それが我々の中での「正しい」になる</strong>と考えている。</p>
+					<p>もうひとつ付け加えるならば、<strong>「正しい」ことに従って行動するべきかどうか</strong>のほうが疑問である。あなたがもしAIの助言に背くならば、それは<strong>「正しい」ことを認めた上で「納得」していない</strong>からであろう。</p>
+					<blockquote cite="http://d.hatena.ne.jp/shi3z/20170214/1487026817">
+						<p>もうひとつ付け加えるとすれば、今のコンピュータは数学を応用することはできるが、数学を道具として使うことはできない。それはディープラーニングだろうが同じである。</p>
+						<cite><a href="http://d.hatena.ne.jp/shi3z/20170214/1487026817">人類の妄想が生み出した数学は最強の道具である</a></cite>
+					</blockquote>
+					<p>シンギュラリティが来ようがなんだろうが、<strong>最終的に行動を決定するのは我らである</strong>。「信用」した結果従うのか、「信用」した結果抗うのか、それもまた我々の責任となる。</p>
+					<br>
+					<p>少なくとも人間は、「正しい」ために生きていない。レジでお釣りを払うのは、"レジが"金額を提示したからでも、"店員が"それを読み上げたからでもない。"あなたが"払おうとするからである。</p>
+				</div>
+			</div>
+		</div>
+	</div><!-- /.container -->
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6 col-sm-4">
+				<a class="btn btn-social btn-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://musicshio.github.io/sites/advent2017/day15.html" role="button"><i class="fa fa-facebook left"></i> Facebook</a>
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<a class="btn btn-social btn-tw" href="http://twitter.com/share?url=https://musicshio.github.io/sites/advent2017/day15.html&text=それでもお釣りは払う+-+Advent+Calendar+2017" role="button"><i class="fa fa-twitter left"></i> Twitter</a>
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<a class="btn btn-social btn-gplus" href="https://plusone.google.com/_/+1/confirm?hl=ja&url=https://musicshio.github.io/sites/advent2017/day15.html" role="button"><i class="fa fa-google-plus left"></i> Google +</a>
+			</div>
+		</div>
+	</div>
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>	
+	<script src="../js/prettify.js"></script>
+	<script src="../js/lang-css.js"></script>
+	<script>prettyPrint();</script>
+	
+</body>
+</html>
