@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Day23 - Advent Calendar 2017</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<!--add CSS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/article.css">
+	<link rel="stylesheet" href="../css/prettify.css">
+<!--	// YakuHanJP-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanjp.min.css">
+
+<!--	// YakuHanJPs-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanjp_s.min.css">
+
+<!--	// YakuHanMP-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanmp.min.css">
+
+<!--	// YakuHanMPs-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@2.0.0/dist/css/yakuhanmp_s.min.css">
+					<script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<script type="text/x-mathjax-config">
+		MathJax.Hub.Config({
+			tex2jax: {
+				inlineMath: [['$','$'], ['\\(','\\)']], 
+				displayMath: [['$$','$$'], ['\\[','\\]']], 
+				processEscapes: true 
+			}
+		});
+	</script>
+	<script type="text/x-mathjax-config"> 
+		MathJax.Hub.Config({ 
+			"HTML-CSS": { scale: 80, linebreaks: { automatic: true } }, 
+			SVG: { linebreaks: { automatic:true } } })
+	</script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+		<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<a class="navbar-brand" href="../index.html">shio</a>
+
+		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Advent2017</a>
+					<div class="dropdown-menu" aria-labelledby="dropdown01">
+						<a class="dropdown-item" href="index.html">Top</a>
+						<a class="dropdown-item" href="day1.html">Day1</a>
+						<a class="dropdown-item" href="day2.html">Day2</a>
+						<a class="dropdown-item" href="day3.html">Day3</a>
+						<a class="dropdown-item" href="day4.html">Day4</a>
+						<a class="dropdown-item" href="day5.html">Day5</a>
+						<a class="dropdown-item" href="day6.html">Day6</a>
+						<a class="dropdown-item" href="day7.html">Day7</a>
+						<a class="dropdown-item" href="day8.html">Day8</a>
+						<a class="dropdown-item" href="day9.html">Day9</a>
+						<a class="dropdown-item" href="day10.html">Day10</a>
+						<a class="dropdown-item" href="day11.html">Day11</a>
+						<a class="dropdown-item" href="day12.html">Day12</a>
+						<a class="dropdown-item" href="day13.html">Day13</a>
+						<a class="dropdown-item" href="day14.html">Day14</a>
+						<a class="dropdown-item" href="day15.html">Day15</a>
+						<a class="dropdown-item" href="day16.html">Day16</a>
+						<a class="dropdown-item" href="day17.html">Day17</a>
+						<a class="dropdown-item" href="day18.html">Day18</a>
+						<a class="dropdown-item" href="day19.html">Day19</a>
+						<a class="dropdown-item" href="day20.html">Day20</a>
+						<a class="dropdown-item disabled" href="#">Day21</a>
+					</div>
+				</li>
+			</ul>
+<!--      <formumei 
+jidou class="form-inline my-2 my-lg-0">-->
+<!--        <input class="form-control mr-sm-2" type="text" placeholder="Search">-->
+<!--        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+<!--      </form>-->
+		</div>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="article col">
+				<div class="page-header">
+					<h1>矛盾してるの <small>矛盾と不幸</small></h1>
+				</div>
+				<div class="articleMain">
+					<h2>面接</h2>
+					<p>Q.あなたのやりたいことは何ですか？</p>
+					<p>A.これといって特にはないです</p>
+					<br>
+					<p>Q.ではなぜ大学に入ったのですか？</p>
+					<p>A.大学に入れば何かしら見つかると思ったからです</p>
+					<br>
+					<p>Q.見つかりましたか？</p>
+					<p>A.いいえ</p>
+					<br>
+					<p>Q.ではなぜうちの企業に？</p>
+					<p>A.自分の長所を活かせると思ったからです</p>
+					<br>
+					<p>Q.長所を活かせることと、あなたがやりたいことは違うのですか？</p>
+					<p>A.違います</p>
+					<br>
+					<p>Q.あなたはいずれは自分のやりたいことをして生きていきたいですか？</p>
+					<p>A.はい</p>
+					<br>
+					<p>Q.いまはないんですよね、探さないのですか？</p>
+					<br>
+					<br>
+					<br>
+					<br>
+					<h2>無矛盾律</h2>
+					<p><strong>無矛盾律</strong>、というものがある。</p>
+					$$
+					\lnot (P \land \lnot P)
+					$$
+					<p>これは<strong>PであってPでないものは存在しない</strong>、という原理である。その名の通り矛盾してはいけないという意味で、無矛盾律と呼ぶ。</p>
+					<h2>矛盾</h2>
+					<p>そもそも<strong>矛盾</strong>とは何であったか。</p>
+					<div align="center">
+						<img src="img/contradiction.svg" alt="contradiction" title="矛盾" width=80%>
+					</div>
+					<p>この場合、<strong>矛に関しても盾に関してもどちらを肯定しても辻褄が合わない</strong>。</p>
+					<br>
+					<p>ここから派生して、<strong>論理学</strong>では次の定義となる。</p>
+					$$
+					P \land \lnot P
+					$$
+					<p>先の例でいうと、「何でも突き通してかつこの盾だけは突き通せない矛」つまり、「<strong>『何でも突き通せる』が「何でもは突き通せない』矛</strong>」ということになる。</p>
+					<p>この文が書かれた以上、主張としては成立していることになる。ただそれが真か偽かは別の話である。</p>
+					<p><strong>無矛盾律は、これが偽だということである</strong>。</p>
+					<h2>排中律と無矛盾律の排除</h2>
+					<p><a href="day17.html">17日目</a></a>の議論で紹介した<strong>排中律</strong>は、任意の命題Pに対して「<strong>Pであるか、Pでないか、どちらかである</strong>」というものであった。</p>
+					$$
+					P \lor \lnot P
+					$$
+					<p>これは一見自明なようであるが、<strong>人間の推論に於いては意外とそうとも限らない</strong>ことから直観論理を紹介した。</p>
+					<p><strong>排中律の成り立たない世界</strong>は、図でいうと以下のようなものである。</p>
+					<div align="center">
+						<img src="img/haichuu.png" alt="absence of law of excluded middle" title="排中律の成り立たない世界" width=80%>
+					</div>
+					<p>その真ん中はなんやねんという感じではあるが、我慢していただきたい。対して、<strong>無矛盾律の成り立たない世界</strong>はこうだ。</p>
+					<div align="center">
+						<img src="img/mumujun.png" alt="absence of law of noncontradiction" title="無矛盾律の成り立たない世界" width=80%>
+					</div>
+					<h2>無矛盾律の排除はヤバい</h2>
+					<p>僕の感覚的には、<strong>無矛盾律を仮定しないことは排中律を仮定しないことよりもヤバい</strong>と思う。所謂<strong>「推論」と呼ばれるものたちがかなり崩壊する</strong>からだ。</p>
+					<br>
+					<p>たとえば、<strong>背理法</strong>が成り立たない。</p>
+					<p>背理法は、<strong>命題$P$に対して、$\lnot P$を仮定して矛盾を導くことで元の命題を証明する</strong>ということである。</p>
+					<p>ちなみにこれは排中律の排除でも崩壊するが、排中律を排除しても「$P$を仮定して矛盾が起きるので、$P$は偽である」という「否定の導入」は言うことが出来る。</p>
+					<br>
+					<p>というかそもそも古典論理にしろ直観論理にしろ、<strong>矛盾からは任意の命題が証明できてしまう</strong>のである。</p>
+					$$
+					P, \lnot P \vdash Q
+					$$
+					<p>詳しめに言うと、Pが真でもnot真でもあるときに、Pは真なので「PまたはQ」は真であり、かつPは真ではないのでQのほうが真なのである。</p>
+					$$
+					P \land \lnot P\\
+					P\\
+					P \lor Q
+					\lnot P
+					Q
+					$$
+					<p><strong>矛盾しても良いことになってしまうと、任意の主張が自明に正しくなってしまうのである！</strong>これを<strong>爆発律</strong>という。</p>
+					<h2>心の中の矛盾</h2>
+					<p>このように、<strong>論理的にはかなりヤバい「矛盾」</strong>であるが、<strong>われわれの思考はしばしば矛盾している</strong>と僕は主張したい。</p>
+					<iframe class="hatenablogcard" style="width:100%;height:155px;margin:15px 0;max-width:680px;" title="心理の矛盾を許容する - Revenantのブログ" src="https://hatenablog-parts.com/embed?url=http://re-venant.hatenablog.com/entry/2015/12/20/215723#f-6355f0ed" frameborder="0" scrolling="no"></iframe>
+					<p>みんな「<strong>『PであってPではない』なんてありえないじゃないか</strong>」と思うかもしれない。</p>
+					<p>でも例えば、「<strong>学校に行きたいけど行きたくない</strong>」などということはないだろうか。「あなたのこと、<strong>好きだけど好きじゃないわ</strong>」はどうだろうか。</p>
+					<p>それでも人間は「学校に行く」か「学校に行かない」を選ぶわけで、<strong>行動としてはどちらかが決定することになる</strong>。しかし、<strong>心の中の「行きたいけど行きたくない」は依然として矛盾していたままなのである</strong>。</p>
+					<br>
+					<br>
+					<br>
+					<p>「ママー、学校行きたくない」</p>
+					<p>「あら、どうして？」</p>
+					<p>「さいきん〇〇ちゃんがいじめてくるから」</p>
+					<p>「それは大変。じゃあ今日はとりあえずお休みしましょ、先生には言っておくわ」</p>
+					<p>「えー、でも××ちゃんに会いたいから、一応行きたい」</p>
+					<p>「じゃあ今日は行くの？」</p>
+					<p>「やだ」</p>
+					<br>
+					<br>
+					<br>
+					<p>こんな例はいくらでもあるのではないだろうか。</p>
+					<h2>内部化と説得力</h2>
+					<p>先のブログにおいては、<strong>心の矛盾を許容しようという結論に至っていたが、僕はそうは思わない</strong>。なぜなら、<strong>我々が辛いと思うときはその矛盾に起因している場合が多いと思うから</strong>である。</p>
+					<br>
+					<p><a href="day18.html">18日目</a>に「怒り」について考察した時、<strong>人は自分の心の中に矛盾が生まれるとき&mdash;認知的不協和が生じた時&mdash;どうしようもない「怒り」が沸き起こり、それを認知を歪めてでも解消する</strong>、ということを述べた。</p>
+					<p>一つ矛盾を認めると、何とでも言えてしまうのである。<strong>相手のことが「好きだし好きではない」なら、「いま告白すべき」でもあるし「いまは告白しないべき」でもあるのだ。</strong>なんとでも言えるということは、<strong>あらゆる命題が意味をなさないものになってしまう</strong>。「告白すべき」という結論が出ても、依然として「告白しないべき」かもしれず、納得できないのである。</p>
+					<p>僕の考えでは、先の件に関しては<strong>「学校に行きたさ」と「学校に行きたくなさ」を天秤にかけることでどちらが良いかを論理的に結論付けることが出来る</strong>ので、そのような「内部化」を行うことで矛盾を解消できると思う。</p>
+					<br>
+					<p>また、僕が矛盾を許容したくないのはもうひとつ理由があって、<strong>矛盾を含んだ主張は説得力がないから</strong>である。</p>
+					<p>国会議員が与党の政策に<strong>あっちでは賛成しこっちでは反対していたら支持しようとは思わないであろう</strong>。<strong>矛盾しない、筋の通った主張というのは、コミュニケーションの一つの武器なのである。</strong></p>
+					<h2>不幸</h2>
+					<p>矛盾を許容して生きる人生は、ひたすらに心が傷ついてしまうと思う。</p>
+					<p>「幸せになりたい」と言い続けるメンヘラは、恐らく「幸せになりたくない」のだと思う。「幸せになろうとする努力」は絶対的に善いことであるので、幸せになりたい状態は社会的に赦されている。</p>
+					<p>しかし一度幸せになると、その先の行動は自分で決めなければならない。その行動の判断には責任が伴う。だから幸せであるということは彼ら/彼女らにとって不幸なことなのである。</p>
+					<p>止めて欲しくて「別れよう」という彼女も、リストカットをする人も、そのような心理なのであろう。</p>
+					<br>
+					<p>矛盾した、幻想の「幸せ」を目指すことは同時に「不幸」をも招くので注意したほうがいい。自分にとっての「本当の幸せ」をしっかり考えることはとても重要なことに思う。</p>
+				</div>
+			</div>
+		</div>
+	</div><!-- /.container -->
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6 col-sm-4">
+				<a class="btn btn-social btn-fb" href="https://www.facebook.com/sharer/sharer.php?u=https://musicshio.github.io/sites/advent2017/day23.html" role="button"><i class="fa fa-facebook left"></i> Facebook</a>
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<a class="btn btn-social btn-tw" href="http://twitter.com/share?url=https://musicshio.github.io/sites/advent2017/day23.html&text=矛盾してるの+-+Advent+Calendar+2017" role="button"><i class="fa fa-twitter left"></i> Twitter</a>
+			</div>
+			<div class="col-xs-6 col-sm-4">
+				<a class="btn btn-social btn-gplus" href="https://plusone.google.com/_/+1/confirm?hl=ja&url=https://musicshio.github.io/sites/advent2017/day23.html" role="button"><i class="fa fa-google-plus left"></i> Google +</a>
+			</div>
+		</div>
+	</div>
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>	
+	<script src="../js/prettify.js"></script>
+	<script src="../js/lang-css.js"></script>
+	<script>prettyPrint();</script>
+	
+</body>
+</html>
