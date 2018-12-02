@@ -22,7 +22,7 @@ def make_dropdown_menu(day, now):
     return res
 
 for file in files:
-    print file
+    print(file)
     now = int(file.replace('day','').replace('.html',''))
     file = os.path.join(here,file)
     with open(file, "r") as f:
